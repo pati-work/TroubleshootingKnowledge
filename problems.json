@@ -4,61 +4,61 @@
   "count": 136,
   "problems": [
     {
-  "schemaVersion": 1,
-  "id": "air-conditioner-not-cooling",
-  "title": "Air conditioner is running but not cooling",
-  "category": "appliances",
-  "status": "published",
-  "difficulty": "basic",
-  "keywords": [
-    "AC not cooling",
-    "air conditioner not cooling",
-    "air conditioner blowing warm air",
-    "AC blowing hot air",
-    "AC cooling problem",
-    "air conditioner running but room is warm",
-    "AC airflow but no cooling"
-  ],
-  "symptoms": [
-    "Room remains warm even though the AC is running",
-    "Air comes from the vents but does not feel cool",
-    "Air conditioner runs for a long time without cooling the room",
-    "Cooling is weaker than usual"
-  ],
-  "diagnosis": {
-    "question": "Is the air conditioner set to Cool mode, with the temperature set lower than the current room temperature?",
-    "answers": {
-      "yes": "check-airflow-filter",
-      "no": "select-cooling-mode"
-    }
-  },
-  "steps": {
-    "check-airflow-filter": {
-      "instruction": "Check whether the air filter is dirty and whether the indoor air vents are blocked. If the outdoor unit is accessible without opening any panels, check that its airflow is not obstructed.",
-      "next": ""
+      "schemaVersion": 1,
+      "id": "air-conditioner-not-cooling",
+      "title": "Air conditioner is running but not cooling",
+      "category": "appliances",
+      "status": "published",
+      "difficulty": "basic",
+      "keywords": [
+        "AC not cooling",
+        "air conditioner not cooling",
+        "air conditioner blowing warm air",
+        "AC blowing hot air",
+        "AC cooling problem",
+        "air conditioner running but room is warm",
+        "AC airflow but no cooling"
+      ],
+      "symptoms": [
+        "Room remains warm even though the AC is running",
+        "Air comes from the vents but does not feel cool",
+        "Air conditioner runs for a long time without cooling the room",
+        "Cooling is weaker than usual"
+      ],
+      "diagnosis": {
+        "question": "Is the air conditioner set to Cool mode, with the temperature set lower than the current room temperature?",
+        "answers": {
+          "yes": "check-airflow-filter",
+          "no": "select-cooling-mode"
+        }
+      },
+      "steps": {
+        "check-airflow-filter": {
+          "instruction": "Check whether the air filter is dirty and whether the indoor air vents are blocked. If the outdoor unit is accessible without opening any panels, check that its airflow is not obstructed.",
+          "next": ""
+        },
+        "select-cooling-mode": {
+          "instruction": "Using the AC remote or control panel, select Cool mode and set the target temperature below the current room temperature. Allow some time for cooling to begin.",
+          "next": ""
+        }
+      },
+      "solutions": [
+        "Clean or replace user-accessible air filters according to the manufacturer's instructions.",
+        "Keep indoor supply and return vents clear of furniture, curtains, dust, and other obstructions.",
+        "Ensure the outdoor unit has adequate space for airflow and that its exterior is not obstructed.",
+        "Close windows and doors while cooling, and reduce direct sunlight by closing curtains or blinds.",
+        "If the AC still does not cool, repeatedly trips a circuit breaker, or shows an error code, contact a qualified air-conditioning technician.",
+        "If ice forms on the unit or its pipes, switch off cooling and consult a qualified technician rather than attempting to remove the ice with tools."
+      ],
+      "safety": [
+        "Do not open electrical compartments, touch exposed wiring, or attempt to handle refrigerants.",
+        "Do not remove protective panels or reach inside the outdoor unit while it is operating.",
+        "If you notice a burning smell, smoke, sparks, or signs of electrical damage, switch off the unit at the breaker if it is safe to do so and seek qualified assistance.",
+        "Do not repeatedly restart an AC that trips a circuit breaker."
+      ],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
     },
-    "select-cooling-mode": {
-      "instruction": "Using the AC remote or control panel, select Cool mode and set the target temperature below the current room temperature. Allow some time for cooling to begin.",
-      "next": ""
-    }
-  },
-  "solutions": [
-    "Clean or replace user-accessible air filters according to the manufacturer's instructions.",
-    "Keep indoor supply and return vents clear of furniture, curtains, dust, and other obstructions.",
-    "Ensure the outdoor unit has adequate space for airflow and that its exterior is not obstructed.",
-    "Close windows and doors while cooling, and reduce direct sunlight by closing curtains or blinds.",
-    "If the AC still does not cool, repeatedly trips a circuit breaker, or shows an error code, contact a qualified air-conditioning technician.",
-    "If ice forms on the unit or its pipes, switch off cooling and consult a qualified technician rather than attempting to remove the ice with tools."
-  ],
-  "safety": [
-    "Do not open electrical compartments, touch exposed wiring, or attempt to handle refrigerants.",
-    "Do not remove protective panels or reach inside the outdoor unit while it is operating.",
-    "If you notice a burning smell, smoke, sparks, or signs of electrical damage, switch off the unit at the breaker if it is safe to do so and seek qualified assistance.",
-    "Do not repeatedly restart an AC that trips a circuit breaker."
-  ],
-  "sources": [],
-  "updatedAt": "2026-10-10T00:00:00.000Z"
-},
     {
       "schemaVersion": 1,
       "id": "air-conditioner-water-leaking",
@@ -66,11 +66,7 @@
       "category": "appliances",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "AC water leak",
-        "condensate drain",
-        "indoor unit dripping"
-      ],
+      "keywords": ["AC water leak", "condensate drain", "indoor unit dripping"],
       "symptoms": [
         "Water drips from indoor unit",
         "Wall or floor near AC becomes wet"
@@ -110,11 +106,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "alarm silent",
-        "clock alarm",
-        "Do Not Disturb"
-      ],
+      "keywords": ["alarm silent", "clock alarm", "Do Not Disturb"],
       "symptoms": [
         "Alarm time passes without sound",
         "Alarm notification is silent"
@@ -200,11 +192,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "app crash",
-        "app closes",
-        "Android error"
-      ],
+      "keywords": ["app crash", "app closes", "Android error"],
       "symptoms": [
         "App closes unexpectedly",
         "App displays an error repeatedly"
@@ -250,10 +238,7 @@
         "camera permission",
         "location permission"
       ],
-      "symptoms": [
-        "App cannot access a feature",
-        "Permission warning appears"
-      ],
+      "symptoms": ["App cannot access a feature", "Permission warning appears"],
       "diagnosis": {
         "question": "Does the app genuinely need the requested permission for the feature you are using?",
         "answers": {
@@ -333,11 +318,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "default apps",
-        "open links",
-        "browser association"
-      ],
+      "keywords": ["default apps", "open links", "browser association"],
       "symptoms": [
         "Links open in an unexpected app",
         "Android asks which app to use repeatedly"
@@ -364,9 +345,7 @@
         "Clear the wrong app's defaults if that option is available.",
         "Update the affected apps."
       ],
-      "safety": [
-        "Do not open suspicious links simply to test app handling."
-      ],
+      "safety": ["Do not open suspicious links simply to test app handling."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -377,15 +356,8 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "battery drain",
-        "phone battery",
-        "background apps"
-      ],
-      "symptoms": [
-        "Battery drops quickly",
-        "Phone needs frequent charging"
-      ],
+      "keywords": ["battery drain", "phone battery", "background apps"],
+      "symptoms": ["Battery drops quickly", "Phone needs frequent charging"],
       "diagnosis": {
         "question": "Did battery drain begin after installing or updating an app?",
         "answers": {
@@ -422,12 +394,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "Bluetooth pairing",
-        "headphones",
-        "speaker",
-        "watch"
-      ],
+      "keywords": ["Bluetooth pairing", "headphones", "speaker", "watch"],
       "symptoms": [
         "Accessory does not appear in the device list",
         "Pairing fails"
@@ -468,15 +435,8 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "cannot call",
-        "call failed",
-        "cellular service"
-      ],
-      "symptoms": [
-        "Outgoing calls fail",
-        "Phone reports network unavailable"
-      ],
+      "keywords": ["cannot call", "call failed", "cellular service"],
+      "symptoms": ["Outgoing calls fail", "Phone reports network unavailable"],
       "diagnosis": {
         "question": "Can the phone show cellular signal and receive calls?",
         "answers": {
@@ -518,10 +478,7 @@
         "camera not opening",
         "Android camera"
       ],
-      "symptoms": [
-        "Camera preview is black",
-        "Camera app crashes"
-      ],
+      "symptoms": ["Camera preview is black", "Camera app crashes"],
       "diagnosis": {
         "question": "Does the camera work in another trusted app?",
         "answers": {
@@ -558,11 +515,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "contacts sync",
-        "Google account",
-        "missing contacts"
-      ],
+      "keywords": ["contacts sync", "Google account", "missing contacts"],
       "symptoms": [
         "New contacts do not appear on other devices",
         "Some contacts are missing"
@@ -603,11 +556,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "DND schedule",
-        "silent mode automatic",
-        "focus mode"
-      ],
+      "keywords": ["DND schedule", "silent mode automatic", "focus mode"],
       "symptoms": [
         "Notifications are silenced unexpectedly",
         "Do Not Disturb activates automatically"
@@ -647,11 +596,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "mobile data usage",
-        "background data",
-        "data limit"
-      ],
+      "keywords": ["mobile data usage", "background data", "data limit"],
       "symptoms": [
         "Data allowance runs out quickly",
         "Unexpected mobile data charges"
@@ -692,12 +637,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "mobile internet",
-        "cellular data",
-        "4G",
-        "5G"
-      ],
+      "keywords": ["mobile internet", "cellular data", "4G", "5G"],
       "symptoms": [
         "Phone has cellular signal but no internet",
         "Apps cannot load using mobile data"
@@ -738,11 +678,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "mobile hotspot",
-        "tethering",
-        "connected no internet"
-      ],
+      "keywords": ["mobile hotspot", "tethering", "connected no internet"],
       "symptoms": [
         "Other devices cannot join the hotspot",
         "Connected devices have no internet"
@@ -828,11 +764,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "Android update failed",
-        "system update",
-        "OTA error"
-      ],
+      "keywords": ["Android update failed", "system update", "OTA error"],
       "symptoms": [
         "Update download fails",
         "Installation stops or reports an error"
@@ -873,12 +805,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "slow charging",
-        "charger",
-        "USB cable",
-        "battery"
-      ],
+      "keywords": ["slow charging", "charger", "USB cable", "battery"],
       "symptoms": [
         "Battery percentage rises slowly",
         "Fast charging does not activate"
@@ -920,11 +847,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "boot loop",
-        "random restart",
-        "phone rebooting"
-      ],
+      "keywords": ["boot loop", "random restart", "phone rebooting"],
       "symptoms": [
         "Phone restarts without warning",
         "Phone repeatedly returns to the startup logo"
@@ -965,11 +888,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "microphone",
-        "voice calls",
-        "voice recording"
-      ],
+      "keywords": ["microphone", "voice calls", "voice recording"],
       "symptoms": [
         "Other people cannot hear you",
         "Voice recordings are silent"
@@ -997,9 +916,7 @@
         "Restart the phone.",
         "Seek service if multiple apps fail after software checks."
       ],
-      "safety": [
-        "Do not insert pins or liquids into microphone openings."
-      ],
+      "safety": ["Do not insert pins or liquids into microphone openings."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -1010,11 +927,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "incoming call silent",
-        "ringer volume",
-        "Do Not Disturb"
-      ],
+      "keywords": ["incoming call silent", "ringer volume", "Do Not Disturb"],
       "symptoms": [
         "Incoming calls appear silently",
         "Only missed-call notifications appear"
@@ -1055,11 +968,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "phone hot",
-        "overheating",
-        "temperature warning"
-      ],
+      "keywords": ["phone hot", "overheating", "temperature warning"],
       "symptoms": [
         "Phone feels unusually hot",
         "Performance slows or charging pauses"
@@ -1101,11 +1010,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "moisture detected",
-        "USB port wet",
-        "charging blocked"
-      ],
+      "keywords": ["moisture detected", "USB port wet", "charging blocked"],
       "symptoms": [
         "Charging is blocked by a moisture warning",
         "USB connection is disabled"
@@ -1146,15 +1051,8 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "phone no sound",
-        "media volume",
-        "speaker"
-      ],
-      "symptoms": [
-        "Media plays silently",
-        "Ringtone cannot be heard"
-      ],
+      "keywords": ["phone no sound", "media volume", "speaker"],
+      "symptoms": ["Media plays silently", "Ringtone cannot be heard"],
       "diagnosis": {
         "question": "Is audio being routed to Bluetooth headphones or another output device?",
         "answers": {
@@ -1178,9 +1076,7 @@
         "Restart the phone.",
         "Test more than one app to determine whether the problem is app-specific."
       ],
-      "safety": [
-        "Do not insert sharp objects into speaker openings."
-      ],
+      "safety": ["Do not insert sharp objects into speaker openings."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -1191,11 +1087,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "storage full",
-        "phone space",
-        "cannot install app"
-      ],
+      "keywords": ["storage full", "phone space", "cannot install app"],
       "symptoms": [
         "Apps cannot update",
         "Camera cannot save photos",
@@ -1238,15 +1130,8 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "vibration",
-        "haptic feedback",
-        "silent notifications"
-      ],
-      "symptoms": [
-        "Calls do not vibrate",
-        "Touch feedback is absent"
-      ],
+      "keywords": ["vibration", "haptic feedback", "silent notifications"],
+      "symptoms": ["Calls do not vibrate", "Touch feedback is absent"],
       "diagnosis": {
         "question": "Is vibration enabled in sound and accessibility settings?",
         "answers": {
@@ -1283,11 +1168,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "phone dead",
-        "black screen",
-        "won't power on"
-      ],
+      "keywords": ["phone dead", "black screen", "won't power on"],
       "symptoms": [
         "Screen remains black",
         "Phone does not respond to the power button"
@@ -1328,11 +1209,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "missing photos",
-        "Gallery empty",
-        "photo backup"
-      ],
+      "keywords": ["missing photos", "Gallery empty", "photo backup"],
       "symptoms": [
         "Some pictures no longer appear",
         "Gallery shows fewer photos than expected"
@@ -1378,10 +1255,7 @@
         "app download stuck",
         "Android app install"
       ],
-      "symptoms": [
-        "Download stays pending",
-        "Apps do not install"
-      ],
+      "symptoms": ["Download stays pending", "Apps do not install"],
       "diagnosis": {
         "question": "Can the phone access websites and does it have enough free storage?",
         "answers": {
@@ -1418,11 +1292,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "adaptive brightness",
-        "auto brightness",
-        "screen dimming"
-      ],
+      "keywords": ["adaptive brightness", "auto brightness", "screen dimming"],
       "symptoms": [
         "Brightness changes automatically",
         "Screen dims unexpectedly"
@@ -1450,9 +1320,7 @@
         "Let an overheated phone cool down.",
         "Restart the phone if behaviour seems abnormal."
       ],
-      "safety": [
-        "Do not disable thermal protection features."
-      ],
+      "safety": ["Do not disable thermal protection features."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -1463,15 +1331,8 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "auto rotate",
-        "screen orientation",
-        "landscape mode"
-      ],
-      "symptoms": [
-        "Screen stays in portrait mode",
-        "Videos do not rotate"
-      ],
+      "keywords": ["auto rotate", "screen orientation", "landscape mode"],
+      "symptoms": ["Screen stays in portrait mode", "Videos do not rotate"],
       "diagnosis": {
         "question": "Is Auto-rotate enabled in Quick Settings?",
         "answers": {
@@ -1495,9 +1356,7 @@
         "Update the affected app and Android.",
         "Seek service if orientation sensors appear to have failed."
       ],
-      "safety": [
-        "Do not install untrusted sensor-calibration apps."
-      ],
+      "safety": ["Do not install untrusted sensor-calibration apps."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -1508,11 +1367,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "touchscreen not working",
-        "screen frozen",
-        "touch failure"
-      ],
+      "keywords": ["touchscreen not working", "screen frozen", "touch failure"],
       "symptoms": [
         "Touches do not register",
         "Only part of the screen responds"
@@ -1553,15 +1408,8 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "SIM not detected",
-        "no SIM",
-        "mobile network"
-      ],
-      "symptoms": [
-        "Phone reports no SIM",
-        "Mobile service is unavailable"
-      ],
+      "keywords": ["SIM not detected", "no SIM", "mobile network"],
+      "symptoms": ["Phone reports no SIM", "Mobile service is unavailable"],
       "diagnosis": {
         "question": "Did the phone recently fall, get wet, or have its SIM removed?",
         "answers": {
@@ -1585,9 +1433,7 @@
         "Check whether the SIM works in a compatible device if safe and appropriate.",
         "Contact the carrier for a replacement SIM if needed."
       ],
-      "safety": [
-        "Do not force the SIM tray or use a damaged SIM card."
-      ],
+      "safety": ["Do not force the SIM tray or use a damaged SIM card."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -1598,11 +1444,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "SMS failed",
-        "text message not sent",
-        "messaging app"
-      ],
+      "keywords": ["SMS failed", "text message not sent", "messaging app"],
       "symptoms": [
         "Messages remain unsent",
         "SMS failure notification appears"
@@ -1643,11 +1485,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "microSD not detected",
-        "memory card",
-        "SD card error"
-      ],
+      "keywords": ["microSD not detected", "memory card", "SD card error"],
       "symptoms": [
         "Card is missing from storage settings",
         "Phone asks to format the card"
@@ -1687,15 +1525,8 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "voice recognition",
-        "microphone",
-        "assistant"
-      ],
-      "symptoms": [
-        "Assistant does not respond to speech",
-        "Voice input fails"
-      ],
+      "keywords": ["voice recognition", "microphone", "assistant"],
+      "symptoms": ["Assistant does not respond to speech", "Voice input fails"],
       "diagnosis": {
         "question": "Does the phone's microphone work in a recording app?",
         "answers": {
@@ -1732,11 +1563,7 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "speech to text",
-        "voice typing",
-        "keyboard microphone"
-      ],
+      "keywords": ["speech to text", "voice typing", "keyboard microphone"],
       "symptoms": [
         "Keyboard microphone does not respond",
         "Speech is not converted to text"
@@ -1777,15 +1604,8 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "mobile browser",
-        "web page loading",
-        "internet"
-      ],
-      "symptoms": [
-        "Web pages time out",
-        "Browser shows a connection error"
-      ],
+      "keywords": ["mobile browser", "web page loading", "internet"],
+      "symptoms": ["Web pages time out", "Browser shows a connection error"],
       "diagnosis": {
         "question": "Do the same websites open in another browser or on another network?",
         "answers": {
@@ -1822,15 +1642,8 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "Android Wi-Fi",
-        "cannot connect",
-        "wrong password"
-      ],
-      "symptoms": [
-        "Wi-Fi connection fails",
-        "Phone repeatedly disconnects"
-      ],
+      "keywords": ["Android Wi-Fi", "cannot connect", "wrong password"],
+      "symptoms": ["Wi-Fi connection fails", "Phone repeatedly disconnects"],
       "diagnosis": {
         "question": "Can another device connect to the same Wi-Fi network?",
         "answers": {
@@ -1854,9 +1667,7 @@
         "Forget and rejoin the network if you know the password.",
         "Reset network settings only after understanding that saved networks and related settings may be removed."
       ],
-      "safety": [
-        "Do not share the Wi-Fi password publicly."
-      ],
+      "safety": ["Do not share the Wi-Fi password publicly."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -1872,10 +1683,7 @@
         "audio dropouts",
         "wireless interference"
       ],
-      "symptoms": [
-        "Sound drops briefly",
-        "Audio stutters during playback"
-      ],
+      "symptoms": ["Sound drops briefly", "Audio stutters during playback"],
       "diagnosis": {
         "question": "Does the problem improve when the headphones are close to the connected device?",
         "answers": {
@@ -1899,9 +1707,7 @@
         "Disconnect unused Bluetooth devices.",
         "Update firmware through the manufacturer's official app if available."
       ],
-      "safety": [
-        "Do not use damaged batteries or unofficial firmware tools."
-      ],
+      "safety": ["Do not use damaged batteries or unofficial firmware tools."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -1912,11 +1718,7 @@
       "category": "electronics",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "Bluetooth audio",
-        "headphones silent",
-        "audio output"
-      ],
+      "keywords": ["Bluetooth audio", "headphones silent", "audio output"],
       "symptoms": [
         "Headphones show connected but audio comes from speakers",
         "Headphones are silent"
@@ -1944,9 +1746,7 @@
         "Disconnect and reconnect the headphones.",
         "Remove and recreate the pairing if necessary."
       ],
-      "safety": [
-        "Keep listening volume at a safe level."
-      ],
+      "safety": ["Keep listening volume at a safe level."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -1957,11 +1757,7 @@
       "category": "electronics",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "speaker pairing",
-        "Bluetooth speaker",
-        "pairing mode"
-      ],
+      "keywords": ["speaker pairing", "Bluetooth speaker", "pairing mode"],
       "symptoms": [
         "Speaker is not visible in Bluetooth settings",
         "Pairing fails"
@@ -2002,11 +1798,7 @@
       "category": "browsers",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "certificate error",
-        "privacy warning",
-        "HTTPS"
-      ],
+      "keywords": ["certificate error", "privacy warning", "HTTPS"],
       "symptoms": [
         "Browser warns that a connection is not private",
         "Certificate is invalid or expired"
@@ -2047,11 +1839,7 @@
       "category": "browsers",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "download error",
-        "download blocked",
-        "file not saved"
-      ],
+      "keywords": ["download error", "download blocked", "file not saved"],
       "symptoms": [
         "Download stops midway",
         "Browser reports a failed download"
@@ -2079,9 +1867,7 @@
         "Review security software alerts rather than bypassing them.",
         "Try another browser if the source is trusted."
       ],
-      "safety": [
-        "Do not bypass a malware warning for an unknown download."
-      ],
+      "safety": ["Do not bypass a malware warning for an unknown download."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -2137,11 +1923,7 @@
       "category": "browsers",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "extension conflict",
-        "add-on problem",
-        "page broken"
-      ],
+      "keywords": ["extension conflict", "add-on problem", "page broken"],
       "symptoms": [
         "Pages break after installing an extension",
         "Browser behaves differently with extensions enabled"
@@ -2181,11 +1963,7 @@
       "category": "browsers",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "slow browser",
-        "tabs slow",
-        "browser performance"
-      ],
+      "keywords": ["slow browser", "tabs slow", "browser performance"],
       "symptoms": [
         "Pages take a long time to open",
         "Browser becomes sluggish"
@@ -2226,11 +2004,7 @@
       "category": "browsers",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "password manager",
-        "autofill",
-        "saved password"
-      ],
+      "keywords": ["password manager", "autofill", "saved password"],
       "symptoms": [
         "Saved credentials are not suggested",
         "Login form remains empty"
@@ -2276,10 +2050,7 @@
         "favorites disappeared",
         "browser profile"
       ],
-      "symptoms": [
-        "Bookmark bar is empty",
-        "Saved favorites are not visible"
-      ],
+      "symptoms": ["Bookmark bar is empty", "Saved favorites are not visible"],
       "diagnosis": {
         "question": "Are you using the same browser profile as before?",
         "answers": {
@@ -2361,11 +2132,7 @@
       "category": "browsers",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "pop-up ads",
-        "browser notifications",
-        "adware"
-      ],
+      "keywords": ["pop-up ads", "browser notifications", "adware"],
       "symptoms": [
         "Unexpected tabs open",
         "Repeated advertising notifications appear"
@@ -2406,11 +2173,7 @@
       "category": "browsers",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "browser RAM",
-        "many tabs",
-        "memory usage"
-      ],
+      "keywords": ["browser RAM", "many tabs", "memory usage"],
       "symptoms": [
         "Browser slows down with many tabs",
         "Computer memory usage is high"
@@ -2438,9 +2201,7 @@
         "Remove unnecessary extensions.",
         "Restart the browser after saving work."
       ],
-      "safety": [
-        "Save unsent forms and documents before closing tabs."
-      ],
+      "safety": ["Save unsent forms and documents before closing tabs."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -2451,11 +2212,7 @@
       "category": "browsers",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "video playback",
-        "streaming error",
-        "black video"
-      ],
+      "keywords": ["video playback", "streaming error", "black video"],
       "symptoms": [
         "Video remains black",
         "Playback reports an error or spins indefinitely"
@@ -2541,15 +2298,8 @@
       "category": "browsers",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "webpage error",
-        "browser loading",
-        "site unreachable"
-      ],
-      "symptoms": [
-        "Page remains blank",
-        "Browser reports a connection error"
-      ],
+      "keywords": ["webpage error", "browser loading", "site unreachable"],
+      "symptoms": ["Page remains blank", "Browser reports a connection error"],
       "diagnosis": {
         "question": "Does the website open in another browser or on another device?",
         "answers": {
@@ -2586,11 +2336,7 @@
       "category": "browsers",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "session expires",
-        "cookies",
-        "sign-in loop"
-      ],
+      "keywords": ["session expires", "cookies", "sign-in loop"],
       "symptoms": [
         "Login does not persist",
         "Website repeatedly asks for sign-in"
@@ -2631,11 +2377,7 @@
       "category": "browsers",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "website language",
-        "locale",
-        "translation"
-      ],
+      "keywords": ["website language", "locale", "translation"],
       "symptoms": [
         "Website opens in an unexpected language",
         "Content is automatically translated"
@@ -2675,15 +2417,8 @@
       "category": "appliances",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "fan not spinning",
-        "fan hums",
-        "fan power"
-      ],
-      "symptoms": [
-        "Fan does not rotate",
-        "Fan hums but blades do not move"
-      ],
+      "keywords": ["fan not spinning", "fan hums", "fan power"],
+      "symptoms": ["Fan does not rotate", "Fan hums but blades do not move"],
       "diagnosis": {
         "question": "Is there a burning smell, unusual heat, sparking, or a buzzing electrical sound?",
         "answers": {
@@ -2720,11 +2455,7 @@
       "category": "electronics",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "doorbell silent",
-        "wireless doorbell",
-        "door chime"
-      ],
+      "keywords": ["doorbell silent", "wireless doorbell", "door chime"],
       "symptoms": [
         "Pressing the button produces no sound",
         "Wireless doorbell does not respond"
@@ -2765,15 +2496,8 @@
       "category": "appliances",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "kettle not boiling",
-        "electric kettle",
-        "power base"
-      ],
-      "symptoms": [
-        "Kettle does not switch on",
-        "Water remains cold"
-      ],
+      "keywords": ["kettle not boiling", "electric kettle", "power base"],
+      "symptoms": ["Kettle does not switch on", "Water remains cold"],
       "diagnosis": {
         "question": "Is the kettle correctly seated on its base and is the power indicator on?",
         "answers": {
@@ -2811,15 +2535,8 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "email missing",
-        "inbox not updating",
-        "spam folder"
-      ],
-      "symptoms": [
-        "Expected email is missing",
-        "New mail does not appear"
-      ],
+      "keywords": ["email missing", "inbox not updating", "spam folder"],
+      "symptoms": ["Expected email is missing", "New mail does not appear"],
       "diagnosis": {
         "question": "Have you checked Spam, Junk, and other inbox categories?",
         "answers": {
@@ -2856,15 +2573,8 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "email outbox",
-        "SMTP",
-        "mail sending error"
-      ],
-      "symptoms": [
-        "Messages remain in Outbox",
-        "Sending fails with an error"
-      ],
+      "keywords": ["email outbox", "SMTP", "mail sending error"],
+      "symptoms": ["Messages remain in Outbox", "Sending fails with an error"],
       "diagnosis": {
         "question": "Can you receive new email messages in the same account?",
         "answers": {
@@ -2901,11 +2611,7 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "wet phone",
-        "liquid damage",
-        "electronics water exposure"
-      ],
+      "keywords": ["wet phone", "liquid damage", "electronics water exposure"],
       "symptoms": [
         "Device has been exposed to liquid",
         "Device behaves abnormally after getting wet"
@@ -2947,15 +2653,8 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "slow drain",
-        "blocked sink",
-        "water not draining"
-      ],
-      "symptoms": [
-        "Water drains slowly",
-        "Water pools around the drain"
-      ],
+      "keywords": ["slow drain", "blocked sink", "water not draining"],
+      "symptoms": ["Water drains slowly", "Water pools around the drain"],
       "diagnosis": {
         "question": "Is the blockage limited to one sink, or are multiple drains affected?",
         "answers": {
@@ -2992,15 +2691,8 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "light bulb",
-        "lamp not working",
-        "lighting circuit"
-      ],
-      "symptoms": [
-        "Light stays off",
-        "Other lights may still work"
-      ],
+      "keywords": ["light bulb", "lamp not working", "lighting circuit"],
+      "symptoms": ["Light stays off", "Other lights may still work"],
       "diagnosis": {
         "question": "Are there sparks, a burning smell, buzzing, or signs of heat at the switch or fixture?",
         "answers": {
@@ -3037,11 +2729,7 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "burning smell",
-        "smoke",
-        "electrical safety"
-      ],
+      "keywords": ["burning smell", "smoke", "electrical safety"],
       "symptoms": [
         "Burning smell comes from a device",
         "Device becomes unusually hot"
@@ -3082,11 +2770,7 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "low water pressure",
-        "tap flow",
-        "water supply"
-      ],
+      "keywords": ["low water pressure", "tap flow", "water supply"],
       "symptoms": [
         "Water flow is weaker than usual",
         "Only one tap has low flow"
@@ -3126,11 +2810,7 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "hard drive clicking",
-        "drive failure",
-        "data recovery"
-      ],
+      "keywords": ["hard drive clicking", "drive failure", "data recovery"],
       "symptoms": [
         "Drive makes repeated unusual clicking sounds",
         "Drive disconnects or files become inaccessible"
@@ -3214,11 +2894,7 @@
       "category": "appliances",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "gas burner",
-        "ignition failure",
-        "stove not lighting"
-      ],
+      "keywords": ["gas burner", "ignition failure", "stove not lighting"],
       "symptoms": [
         "Burner clicks but does not ignite",
         "Burner does not light normally"
@@ -3259,15 +2935,8 @@
       "category": "electronics",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "HDMI no display",
-        "monitor no signal",
-        "console display"
-      ],
-      "symptoms": [
-        "Display shows no signal",
-        "HDMI source appears black"
-      ],
+      "keywords": ["HDMI no display", "monitor no signal", "console display"],
+      "symptoms": ["Display shows no signal", "HDMI source appears black"],
       "diagnosis": {
         "question": "Is the display set to the HDMI input used by the source device?",
         "answers": {
@@ -3291,9 +2960,7 @@
         "Restart the source device and display.",
         "Check resolution compatibility and device documentation."
       ],
-      "safety": [
-        "Do not force HDMI connectors or open the display."
-      ],
+      "safety": ["Do not force HDMI connectors or open the display."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -3304,11 +2971,7 @@
       "category": "appliances",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "induction stove",
-        "pan not detected",
-        "cooktop error"
-      ],
+      "keywords": ["induction stove", "pan not detected", "cooktop error"],
       "symptoms": [
         "Cooktop switches on but does not heat",
         "Pan detection error appears"
@@ -3395,11 +3058,7 @@
       "category": "electronics",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "screen flicker",
-        "display cable",
-        "refresh rate"
-      ],
+      "keywords": ["screen flicker", "display cable", "refresh rate"],
       "symptoms": [
         "Image flashes or flickers",
         "Display intermittently goes black"
@@ -3440,11 +3099,7 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "PDF error",
-        "document reader",
-        "corrupt PDF"
-      ],
+      "keywords": ["PDF error", "document reader", "corrupt PDF"],
       "symptoms": [
         "PDF reader reports an error",
         "File appears blank or incomplete"
@@ -3485,11 +3140,7 @@
       "category": "electronics",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "charger hot",
-        "cable overheating",
-        "charging safety"
-      ],
+      "keywords": ["charger hot", "cable overheating", "charging safety"],
       "symptoms": [
         "Charger is excessively hot",
         "Cable or connector smells unusual or changes colour"
@@ -3531,11 +3182,7 @@
       "category": "electronics",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "extension board",
-        "power strip",
-        "overload protection"
-      ],
+      "keywords": ["extension board", "power strip", "overload protection"],
       "symptoms": [
         "Connected devices do not receive power",
         "Power indicator is off"
@@ -3576,15 +3223,8 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "wrong print colours",
-        "colour calibration",
-        "printer ink"
-      ],
-      "symptoms": [
-        "Prints have a colour cast",
-        "Some colours are missing"
-      ],
+      "keywords": ["wrong print colours", "colour calibration", "printer ink"],
+      "symptoms": ["Prints have a colour cast", "Some colours are missing"],
       "diagnosis": {
         "question": "Does the printer's test page also show incorrect or missing colours?",
         "answers": {
@@ -3621,11 +3261,7 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "paper jam",
-        "printer stuck",
-        "paper feed"
-      ],
+      "keywords": ["paper jam", "printer stuck", "paper feed"],
       "symptoms": [
         "Printer stops and displays a jam warning",
         "Paper is partly fed"
@@ -3667,11 +3303,7 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "blank print",
-        "empty pages",
-        "ink toner"
-      ],
+      "keywords": ["blank print", "empty pages", "ink toner"],
       "symptoms": [
         "Paper comes out blank",
         "Print preview contains content but output does not"
@@ -3712,12 +3344,7 @@
       "category": "appliances",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "fridge noise",
-        "buzzing",
-        "rattling",
-        "clicking"
-      ],
+      "keywords": ["fridge noise", "buzzing", "rattling", "clicking"],
       "symptoms": [
         "New rattling or buzzing occurs",
         "Noise changes during cooling"
@@ -3758,11 +3385,7 @@
       "category": "appliances",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "fridge warm",
-        "refrigerator temperature",
-        "food spoilage"
-      ],
+      "keywords": ["fridge warm", "refrigerator temperature", "food spoilage"],
       "symptoms": [
         "Food compartment feels warm",
         "Food is spoiling sooner than expected"
@@ -3804,11 +3427,7 @@
       "category": "electronics",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "smart speaker offline",
-        "voice assistant",
-        "wake word"
-      ],
+      "keywords": ["smart speaker offline", "voice assistant", "wake word"],
       "symptoms": [
         "Wake word receives no response",
         "Speaker indicates it is offline"
@@ -3836,9 +3455,7 @@
         "Restart the speaker.",
         "Update settings through the official app and check service status."
       ],
-      "safety": [
-        "Review the device's privacy and microphone settings."
-      ],
+      "safety": ["Review the device's privacy and microphone settings."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -3894,11 +3511,7 @@
       "category": "electronics",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "Smart TV app crash",
-        "streaming app",
-        "TV internet"
-      ],
+      "keywords": ["Smart TV app crash", "streaming app", "TV internet"],
       "symptoms": [
         "App closes immediately",
         "App remains stuck on its loading screen"
@@ -3939,11 +3552,7 @@
       "category": "electronics",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "TV black screen",
-        "sound no picture",
-        "display problem"
-      ],
+      "keywords": ["TV black screen", "sound no picture", "display problem"],
       "symptoms": [
         "Audio is audible but screen appears black",
         "Picture disappears unexpectedly"
@@ -3984,11 +3593,7 @@
       "category": "electronics",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "TV no signal",
-        "HDMI",
-        "set-top box"
-      ],
+      "keywords": ["TV no signal", "HDMI", "set-top box"],
       "symptoms": [
         "TV shows a no-signal message",
         "External device picture is missing"
@@ -4016,9 +3621,7 @@
         "Try a known-good compatible cable or input.",
         "Check the source device and service status."
       ],
-      "safety": [
-        "Do not force connectors or open electronic equipment."
-      ],
+      "safety": ["Do not force connectors or open electronic equipment."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -4029,11 +3632,7 @@
       "category": "electronics",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "TV mute",
-        "no television audio",
-        "sound output"
-      ],
+      "keywords": ["TV mute", "no television audio", "sound output"],
       "symptoms": [
         "Picture works but no sound is heard",
         "Audio output device is silent"
@@ -4074,11 +3673,7 @@
       "category": "electronics",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "TV remote",
-        "remote batteries",
-        "infrared"
-      ],
+      "keywords": ["TV remote", "remote batteries", "infrared"],
       "symptoms": [
         "Buttons do not control the TV",
         "Remote works only intermittently"
@@ -4119,11 +3714,7 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "USB disconnect",
-        "loose cable",
-        "external device"
-      ],
+      "keywords": ["USB disconnect", "loose cable", "external device"],
       "symptoms": [
         "Device repeatedly disappears and returns",
         "Transfer stops unexpectedly"
@@ -4164,15 +3755,8 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "meeting camera",
-        "webcam permission",
-        "black video"
-      ],
-      "symptoms": [
-        "Participants cannot see you",
-        "Camera preview is black"
-      ],
+      "keywords": ["meeting camera", "webcam permission", "black video"],
+      "symptoms": ["Participants cannot see you", "Camera preview is black"],
       "diagnosis": {
         "question": "Does the camera work in the operating system's camera app?",
         "answers": {
@@ -4209,11 +3793,7 @@
       "category": "everyday-problems",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "meeting microphone",
-        "mute",
-        "input device"
-      ],
+      "keywords": ["meeting microphone", "mute", "input device"],
       "symptoms": [
         "Other participants cannot hear you",
         "Microphone meter does not move"
@@ -4254,15 +3834,8 @@
       "category": "appliances",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "washer water remaining",
-        "drain pump",
-        "drain hose"
-      ],
-      "symptoms": [
-        "Water remains in the drum",
-        "Cycle stops before spinning"
-      ],
+      "keywords": ["washer water remaining", "drain pump", "drain hose"],
+      "symptoms": ["Water remains in the drum", "Cycle stops before spinning"],
       "diagnosis": {
         "question": "Does the machine display a drain error code?",
         "answers": {
@@ -4299,15 +3872,8 @@
       "category": "appliances",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "washer shaking",
-        "unbalanced load",
-        "spin cycle noise"
-      ],
-      "symptoms": [
-        "Machine moves during spinning",
-        "Loud vibration occurs"
-      ],
+      "keywords": ["washer shaking", "unbalanced load", "spin cycle noise"],
+      "symptoms": ["Machine moves during spinning", "Loud vibration occurs"],
       "diagnosis": {
         "question": "Does the vibration happen mainly during the spin cycle or with one heavy item?",
         "answers": {
@@ -4344,15 +3910,8 @@
       "category": "appliances",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "washer not starting",
-        "door lock",
-        "washing machine power"
-      ],
-      "symptoms": [
-        "Machine does not respond",
-        "Cycle will not begin"
-      ],
+      "keywords": ["washer not starting", "door lock", "washing machine power"],
+      "symptoms": ["Machine does not respond", "Cycle will not begin"],
       "diagnosis": {
         "question": "Is the display or any indicator light on?",
         "answers": {
@@ -4616,11 +4175,7 @@
       "category": "networking",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "guest Wi-Fi",
-        "captive portal",
-        "guest network offline"
-      ],
+      "keywords": ["guest Wi-Fi", "captive portal", "guest network offline"],
       "symptoms": [
         "Guest device connects but cannot browse",
         "Login page does not appear"
@@ -4660,15 +4215,8 @@
       "category": "networking",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "slow internet",
-        "low speed",
-        "buffering"
-      ],
-      "symptoms": [
-        "Websites load slowly",
-        "Video buffers frequently"
-      ],
+      "keywords": ["slow internet", "low speed", "buffering"],
+      "symptoms": ["Websites load slowly", "Video buffers frequently"],
       "diagnosis": {
         "question": "Is internet slow on multiple devices using the same connection?",
         "answers": {
@@ -4705,11 +4253,7 @@
       "category": "networking",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "router login page",
-        "gateway address",
-        "router settings"
-      ],
+      "keywords": ["router login page", "gateway address", "router settings"],
       "symptoms": [
         "Router settings page times out",
         "Login page cannot be reached"
@@ -4750,11 +4294,7 @@
       "category": "networking",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "router admin password",
-        "router login",
-        "factory reset"
-      ],
+      "keywords": ["router admin password", "router login", "factory reset"],
       "symptoms": [
         "Cannot sign in to router settings",
         "Default credentials do not work"
@@ -4794,11 +4334,7 @@
       "category": "networking",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "router reboot",
-        "Wi-Fi drops",
-        "router power"
-      ],
+      "keywords": ["router reboot", "Wi-Fi drops", "router power"],
       "symptoms": [
         "Wi-Fi disappears repeatedly",
         "Router lights cycle unexpectedly"
@@ -4839,11 +4375,7 @@
       "category": "networking",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "router offline",
-        "broadband down",
-        "internet outage"
-      ],
+      "keywords": ["router offline", "broadband down", "internet outage"],
       "symptoms": [
         "All devices lack internet",
         "Router internet indicator is abnormal"
@@ -4883,11 +4415,7 @@
       "category": "networking",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "Wi-Fi password",
-        "network key",
-        "router password"
-      ],
+      "keywords": ["Wi-Fi password", "network key", "router password"],
       "symptoms": [
         "A new device cannot join the network",
         "Saved password is unavailable"
@@ -4928,11 +4456,7 @@
       "category": "networking",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "weak Wi-Fi",
-        "dead zone",
-        "poor signal"
-      ],
+      "keywords": ["weak Wi-Fi", "dead zone", "poor signal"],
       "symptoms": [
         "Internet is slow far from router",
         "Connection drops in certain rooms"
@@ -4972,15 +4496,8 @@
       "category": "networking",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "video call lag",
-        "meeting freezes",
-        "packet loss"
-      ],
-      "symptoms": [
-        "Video freezes",
-        "Audio breaks up during calls"
-      ],
+      "keywords": ["video call lag", "meeting freezes", "packet loss"],
+      "symptoms": ["Video freezes", "Audio breaks up during calls"],
       "diagnosis": {
         "question": "Does the problem affect other devices or video-call services too?",
         "answers": {
@@ -5004,9 +4521,7 @@
         "Close unnecessary applications.",
         "Check the meeting service's status and recommended network requirements."
       ],
-      "safety": [
-        "Do not install unknown call-quality optimizer software."
-      ],
+      "safety": ["Do not install unknown call-quality optimizer software."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -5017,11 +4532,7 @@
       "category": "networking",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "VPN connection",
-        "VPN no internet",
-        "tunnel error"
-      ],
+      "keywords": ["VPN connection", "VPN no internet", "tunnel error"],
       "symptoms": [
         "Internet works without VPN",
         "Websites stop loading after VPN connects"
@@ -5062,12 +4573,7 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "app offline",
-        "firewall",
-        "proxy",
-        "network access"
-      ],
+      "keywords": ["app offline", "firewall", "proxy", "network access"],
       "symptoms": [
         "Other applications have internet access",
         "One application reports offline"
@@ -5153,12 +4659,7 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "BSOD",
-        "blue screen",
-        "stop code",
-        "system crash"
-      ],
+      "keywords": ["BSOD", "blue screen", "stop code", "system crash"],
       "symptoms": [
         "Windows restarts after a blue screen",
         "A stop code is displayed"
@@ -5199,16 +4700,8 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "Bluetooth pairing",
-        "headphones",
-        "mouse",
-        "keyboard"
-      ],
-      "symptoms": [
-        "Device does not appear",
-        "Pairing fails"
-      ],
+      "keywords": ["Bluetooth pairing", "headphones", "mouse", "keyboard"],
+      "symptoms": ["Device does not appear", "Pairing fails"],
       "diagnosis": {
         "question": "Is the Bluetooth accessory in pairing mode and not already connected to another device?",
         "answers": {
@@ -5232,9 +4725,7 @@
         "Check the accessory battery.",
         "Install Bluetooth drivers through Windows Update or the PC manufacturer."
       ],
-      "safety": [
-        "Only remove a pairing if you can pair the device again."
-      ],
+      "safety": ["Only remove a pairing if you can pair the device again."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -5245,12 +4736,7 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "slow PC",
-        "slow computer",
-        "Windows performance",
-        "lag"
-      ],
+      "keywords": ["slow PC", "slow computer", "Windows performance", "lag"],
       "symptoms": [
         "Applications take a long time to open",
         "Windows responds slowly"
@@ -5291,11 +4777,7 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "shutdown stuck",
-        "Windows won't turn off",
-        "power off"
-      ],
+      "keywords": ["shutdown stuck", "Windows won't turn off", "power off"],
       "symptoms": [
         "Shutting down screen remains visible",
         "Computer stays powered on"
@@ -5335,11 +4817,7 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "wrong clock",
-        "time zone",
-        "date incorrect"
-      ],
+      "keywords": ["wrong clock", "time zone", "date incorrect"],
       "symptoms": [
         "Clock shows the wrong time",
         "Websites report certificate or time errors"
@@ -5366,9 +4844,7 @@
         "Select the correct time zone.",
         "Synchronize the clock while connected to the internet."
       ],
-      "safety": [
-        "Do not install unknown clock-fixing utilities."
-      ],
+      "safety": ["Do not install unknown clock-fixing utilities."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -5379,11 +4855,7 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "USB drive missing",
-        "external hard drive",
-        "drive letter"
-      ],
+      "keywords": ["USB drive missing", "external hard drive", "drive letter"],
       "symptoms": [
         "Drive does not appear in File Explorer",
         "USB storage is not accessible"
@@ -5456,9 +4928,7 @@
         "Install Windows updates.",
         "Check disk health if freezes recur."
       ],
-      "safety": [
-        "Back up important files before running disk repair tools."
-      ],
+      "safety": ["Back up important files before running disk repair tools."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -5469,15 +4939,8 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "file cannot be deleted",
-        "file in use",
-        "access denied"
-      ],
-      "symptoms": [
-        "Windows reports that a file is open",
-        "Deletion is denied"
-      ],
+      "keywords": ["file cannot be deleted", "file in use", "access denied"],
+      "symptoms": ["Windows reports that a file is open", "Deletion is denied"],
       "diagnosis": {
         "question": "Do you recognize the file and know that it is safe to remove?",
         "answers": {
@@ -5513,15 +4976,8 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "keyboard keys",
-        "USB keyboard",
-        "wireless keyboard"
-      ],
-      "symptoms": [
-        "Keystrokes are not registered",
-        "Some keys do not respond"
-      ],
+      "keywords": ["keyboard keys", "USB keyboard", "wireless keyboard"],
+      "symptoms": ["Keystrokes are not registered", "Some keys do not respond"],
       "diagnosis": {
         "question": "Does the keyboard work before Windows starts or on another device?",
         "answers": {
@@ -5558,11 +5014,7 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "battery drain",
-        "laptop battery",
-        "power usage"
-      ],
+      "keywords": ["battery drain", "laptop battery", "power usage"],
       "symptoms": [
         "Battery percentage drops quickly",
         "Laptop runtime is shorter than usual"
@@ -5651,12 +5103,7 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "disk full",
-        "C drive full",
-        "storage space",
-        "low disk"
-      ],
+      "keywords": ["disk full", "C drive full", "storage space", "low disk"],
       "symptoms": [
         "Windows warns about low storage",
         "Applications cannot save files"
@@ -5698,15 +5145,8 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "microphone",
-        "no sound input",
-        "voice not detected"
-      ],
-      "symptoms": [
-        "Apps cannot hear speech",
-        "Microphone level stays low"
-      ],
+      "keywords": ["microphone", "no sound input", "voice not detected"],
+      "symptoms": ["Apps cannot hear speech", "Microphone level stays low"],
       "diagnosis": {
         "question": "Does the microphone work in Windows sound settings?",
         "answers": {
@@ -5730,9 +5170,7 @@
         "Select the correct input device.",
         "Update audio drivers from a trusted source if necessary."
       ],
-      "safety": [
-        "Do not grant microphone access to apps that do not need it."
-      ],
+      "safety": ["Do not grant microphone access to apps that do not need it."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -5743,15 +5181,8 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "printer offline",
-        "print queue",
-        "printing problem"
-      ],
-      "symptoms": [
-        "Print jobs remain queued",
-        "Printer reports offline"
-      ],
+      "keywords": ["printer offline", "print queue", "printing problem"],
+      "symptoms": ["Print jobs remain queued", "Printer reports offline"],
       "diagnosis": {
         "question": "Does the printer show an error or offline status?",
         "answers": {
@@ -5788,11 +5219,7 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "Start search",
-        "file search",
-        "search index"
-      ],
+      "keywords": ["Start search", "file search", "search index"],
       "symptoms": [
         "Expected files are missing from search results",
         "Search returns no results"
@@ -5833,12 +5260,7 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "no audio",
-        "speaker sound",
-        "volume",
-        "audio output"
-      ],
+      "keywords": ["no audio", "speaker sound", "volume", "audio output"],
       "symptoms": [
         "Video plays silently",
         "Volume appears normal but no sound is heard"
@@ -5866,9 +5288,7 @@
         "Run the Windows audio troubleshooter if available.",
         "Check for appropriate audio driver updates."
       ],
-      "safety": [
-        "Do not open powered speakers or electrical equipment."
-      ],
+      "safety": ["Do not open powered speakers or electrical equipment."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -5925,11 +5345,7 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "USB error",
-        "device descriptor",
-        "USB not detected"
-      ],
+      "keywords": ["USB error", "device descriptor", "USB not detected"],
       "symptoms": [
         "Windows reports an unrecognized USB device",
         "Device does not appear"
@@ -5970,11 +5386,7 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "camera not detected",
-        "webcam",
-        "video call camera"
-      ],
+      "keywords": ["camera not detected", "webcam", "video call camera"],
       "symptoms": [
         "Camera app shows an error",
         "Video calls show a black image"
@@ -6002,9 +5414,7 @@
         "Check the physical privacy shutter.",
         "Update the camera driver from the PC manufacturer if necessary."
       ],
-      "safety": [
-        "Grant camera permission only to trusted applications."
-      ],
+      "safety": ["Grant camera permission only to trusted applications."],
       "sources": [],
       "updatedAt": "2026-10-10T00:00:00.000Z"
     },
@@ -6021,10 +5431,7 @@
         "connected no internet",
         "network"
       ],
-      "symptoms": [
-        "Wi-Fi shows connected",
-        "Websites do not load"
-      ],
+      "symptoms": ["Wi-Fi shows connected", "Websites do not load"],
       "diagnosis": {
         "question": "Do other devices on the same Wi-Fi have internet access?",
         "answers": {
@@ -6061,11 +5468,7 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": [
-        "PC won't boot",
-        "Windows startup",
-        "computer won't start"
-      ],
+      "keywords": ["PC won't boot", "Windows startup", "computer won't start"],
       "symptoms": [
         "Computer powers on but Windows does not load",
         "Startup repair appears"
@@ -6106,15 +5509,8 @@
       "category": "windows",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": [
-        "ZIP error",
-        "compressed folder",
-        "archive corrupt"
-      ],
-      "symptoms": [
-        "Extraction reports an error",
-        "Archive appears incomplete"
-      ],
+      "keywords": ["ZIP error", "compressed folder", "archive corrupt"],
+      "symptoms": ["Extraction reports an error", "Archive appears incomplete"],
       "diagnosis": {
         "question": "Did the archive finish downloading completely?",
         "answers": {

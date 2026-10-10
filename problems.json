@@ -64,7 +64,7 @@
       "id": "air-conditioner-water-leaking",
       "title": "Air conditioner is leaking water indoors",
       "category": "appliances",
-      "status": "draft",
+      "status": "published",
       "difficulty": "intermediate",
       "keywords": [
         "AC water leak",
@@ -139,7 +139,7 @@
       "id": "android-alarm-not-ringing",
       "title": "Android alarm does not ring",
       "category": "android",
-      "status": "draft",
+      "status": "published",
       "difficulty": "basic",
       "keywords": [
         "Android alarm not ringing",
@@ -220,7 +220,7 @@
       "id": "android-app-installation-failed",
       "title": "Android app installation fails",
       "category": "android",
-      "status": "draft",
+      "status": "published",
       "difficulty": "basic",
       "keywords": [
         "Android app not installing",
@@ -310,15 +310,41 @@
       "id": "android-app-keeps-crashing",
       "title": "An Android app keeps crashing",
       "category": "android",
-      "status": "draft",
+      "status": "published",
       "difficulty": "basic",
-      "keywords": ["app crash", "app closes", "Android error"],
+      "keywords": [
+        "Android app keeps crashing",
+        "app crashes repeatedly",
+        "app closes unexpectedly",
+        "Android app keeps stopping",
+        "app not responding",
+        "app crashes on startup",
+        "app closes immediately",
+        "app crashes after update",
+        "Android app error",
+        "app freezes and closes",
+        "app crashing on Android",
+        "Google Play app crashing",
+        "Android System WebView app crash",
+        "app crashing due to low storage",
+        "app keeps stopping after update",
+        "Android phone apps crashing"
+      ],
       "symptoms": [
-        "App closes unexpectedly",
-        "App displays an error repeatedly"
+        "The app closes unexpectedly while being used.",
+        "The app opens and immediately closes.",
+        "Android displays a message that the app keeps stopping.",
+        "The app freezes and then closes.",
+        "The app repeatedly displays an error or stops responding.",
+        "The app crashes when opening a particular screen or performing a specific action.",
+        "The app started crashing after an app update.",
+        "The app started crashing after an Android system update.",
+        "Several apps crash or stop responding on the same phone.",
+        "The phone becomes unusually slow or unresponsive when using the app.",
+        "The app crashes when the phone is low on storage or under heavy workload."
       ],
       "diagnosis": {
-        "question": "Does the problem happen with only one app?",
+        "question": "Does the problem happen with only one app, while other apps work normally?",
         "answers": {
           "yes": "repair-one-app",
           "no": "check-system-updates"
@@ -326,25 +352,44 @@
       },
       "steps": {
         "repair-one-app": {
-          "instruction": "Check for an app update and review the app's official support information.",
+          "instruction": "Open the app's official store listing and check for updates. Restart the phone, then test the app again. If it still crashes, note when the crash occurs and check the developer's official support information for known problems.",
           "next": ""
         },
         "check-system-updates": {
-          "instruction": "Check Android system updates and whether storage is nearly full.",
+          "instruction": "Restart the phone and check the available storage in Settings. Install available stable Android system updates if supported by the device. Check Google Play for updates to affected apps and Android system components. If several apps continue crashing, investigate whether the problem began after a recent update or system change.",
           "next": ""
         }
       },
       "solutions": [
-        "Restart the phone.",
-        "Update the app through the official app store.",
-        "Clear the app cache if the option is available.",
-        "Reinstall only after checking whether the app stores important local data."
+        "Restart the phone to clear temporary problems and allow system processes to start again.",
+        "Update the affected app through Google Play or its official distribution channel.",
+        "Check whether the app requires a newer Android version or has known compatibility problems with the device.",
+        "Check available storage in Settings. Free up space if storage is nearly full, using safe methods such as removing unnecessary downloads or moving backed-up media.",
+        "Open Settings, find the affected app, and use the available storage controls to clear its cache if supported. Menu names vary by device and Android version.",
+        "If the app crashes during a particular operation, avoid repeating actions that could cause data loss. Record the steps that trigger the crash and report them to the developer.",
+        "If the problem started immediately after an app update, check the developer's official support page for known issues and subsequent fixes.",
+        "If several apps that display web content begin crashing, check Google Play for updates to Android System WebView and Google Chrome, where applicable. Restart the phone after installing available updates.",
+        "If several apps crash after an Android system update, check for additional official updates and known issues from the device manufacturer.",
+        "If the phone becomes unusually hot, stop intensive activity and allow it to cool naturally. If overheating persists during ordinary use, seek manufacturer support.",
+        "If the problem affects only one app, check its official support resources before changing broader system settings.",
+        "Before reinstalling an app, verify that important information is synchronized or backed up. Some apps store data only on the device.",
+        "If necessary, uninstall and reinstall the affected app from its official source after confirming that doing so will not cause unacceptable data loss.",
+        "If several apps continue crashing after updates, a restart, and storage checks, contact the device manufacturer's support service rather than immediately performing a factory reset.",
+        "If the crash persists, record the affected app name, Android version, device model, approximate crash time, and any error message to help the developer investigate."
       ],
       "safety": [
-        "Clearing app data or reinstalling may erase local information; confirm backups first."
+        "Before clearing app data, uninstalling an app, or resetting the device, confirm whether important information is backed up or synchronized.",
+        "Clearing an app's cache is different from clearing its storage or data. Clearing storage may erase local settings, saved sessions, downloaded content, and other information.",
+        "Do not install modified apps, unofficial APKs, or purported crash-fix utilities from untrusted websites.",
+        "Do not disable Android security protections or grant unnecessary permissions to troubleshoot an app crash.",
+        "Avoid repeatedly performing an action that could corrupt files, duplicate transactions, or submit information more than once.",
+        "Do not immediately factory-reset the phone to fix a single crashing app.",
+        "If the phone becomes extremely hot, the battery swells, or there is a burning smell, stop using the device and seek appropriate professional assistance. Do not attempt to open the battery or device.",
+        "If the crashing app handles financial transactions or other important operations, verify whether the operation completed before retrying it.",
+        "If several essential apps crash repeatedly or the phone becomes unusable, back up important information when it is safe and seek qualified support."
       ],
       "sources": [],
-      "updatedAt": "2026-10-10T00:00:00.000Z"
+      "updatedAt": "2026-10-11T00:00:00.000Z"
     },
     {
       "schemaVersion": 1,

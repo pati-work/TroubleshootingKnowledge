@@ -1,0 +1,2591 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-10T00:00:00.000Z",
+  "count": 100,
+  "problems": [
+    {
+      "schemaVersion": 1,
+      "id": "windows-computer-running-slowly",
+      "title": "Windows computer running slowly",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["slow PC", "slow computer", "Windows performance", "lag"],
+      "symptoms": ["Applications take a long time to open", "Windows responds slowly"],
+      "diagnosis": {"question": "Did the computer become slow suddenly?", "answers": {"yes": "check-recent-changes", "no": "check-resource-usage"}},
+      "steps": {
+        "check-recent-changes": {"instruction": "Check whether a recent application installation or Windows update coincided with the slowdown.", "next": ""},
+        "check-resource-usage": {"instruction": "Open Task Manager and inspect CPU, memory, and disk usage.", "next": ""}
+      },
+      "solutions": ["Close unnecessary applications.", "Restart the computer if convenient and save your work first.", "Uninstall only unwanted applications you recognize.", "Check available storage space."],
+      "safety": ["Do not delete unfamiliar system files or disable security software to improve speed."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-wifi-connected-no-internet",
+      "title": "Windows connected to Wi-Fi but no internet",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["Wi-Fi", "internet not working", "connected no internet", "network"],
+      "symptoms": ["Wi-Fi shows connected", "Websites do not load"],
+      "diagnosis": {"question": "Do other devices on the same Wi-Fi have internet access?", "answers": {"yes": "check-computer-connection", "no": "check-router-connection"}},
+      "steps": {
+        "check-computer-connection": {"instruction": "On the Windows computer, try another website and another browser if available.", "next": ""},
+        "check-router-connection": {"instruction": "Check the router's internet indicator and whether the internet provider reports an outage.", "next": ""}
+      },
+      "solutions": ["Turn Wi-Fi off and on again.", "Restart the router only if other users can tolerate a brief interruption.", "Use Windows network diagnostics.", "If only this computer is affected, check proxy settings and network adapter status."],
+      "safety": ["Do not factory-reset the router unless you know how to restore its configuration."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-update-failing",
+      "title": "Windows Update fails to install",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["Windows Update", "update error", "update stuck", "install failure"],
+      "symptoms": ["An update repeatedly fails", "Windows displays an error code"],
+      "diagnosis": {"question": "Does Windows Update show an error code?", "answers": {"yes": "record-error-code", "no": "check-update-progress"}},
+      "steps": {
+        "record-error-code": {"instruction": "Write down the complete error code and search Microsoft Support for that exact code.", "next": ""},
+        "check-update-progress": {"instruction": "Check whether the update is still progressing before restarting or interrupting the computer.", "next": ""}
+      },
+      "solutions": ["Restart Windows when no update is actively installing.", "Check internet access and available disk space.", "Run the Windows Update troubleshooter if available.", "Use Microsoft's instructions for the exact error code."],
+      "safety": ["Do not force power off while Windows is actively installing an update unless the device is unresponsive and recovery guidance requires it."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-low-disk-space",
+      "title": "Windows system drive is almost full",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["disk full", "C drive full", "storage space", "low disk"],
+      "symptoms": ["Windows warns about low storage", "Applications cannot save files"],
+      "diagnosis": {"question": "Is the C drive nearly full in File Explorer?", "answers": {"yes": "inspect-storage", "no": "check-specific-location"}},
+      "steps": {
+        "inspect-storage": {"instruction": "Open Settings, then System and Storage, to identify which categories use the most space.", "next": ""},
+        "check-specific-location": {"instruction": "Check the drive and folder where the affected application saves files.", "next": ""}
+      },
+      "solutions": ["Empty the Recycle Bin after reviewing its contents.", "Remove temporary files using Windows Storage settings.", "Move personal files to storage you control.", "Uninstall applications you no longer need."],
+      "safety": ["Do not manually delete files from Windows or Program Files folders.", "Back up important files before moving or deleting them."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-computer-wont-shut-down",
+      "title": "Windows computer will not shut down",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["shutdown stuck", "Windows won't turn off", "power off"],
+      "symptoms": ["Shutting down screen remains visible", "Computer stays powered on"],
+      "diagnosis": {"question": "Is Windows showing an update or firmware installation screen?", "answers": {"yes": "wait-for-installation", "no": "check-app-blocking-shutdown"}},
+      "steps": {
+        "wait-for-installation": {"instruction": "Wait and follow the on-screen instructions while the update or firmware operation is in progress.", "next": ""},
+        "check-app-blocking-shutdown": {"instruction": "Look for an application asking you to save work or preventing shutdown.", "next": ""}
+      },
+      "solutions": ["Save open documents and close applications.", "Install pending Windows updates when appropriate.", "If the issue repeats, check reliability history and recent driver changes."],
+      "safety": ["Avoid holding the power button during firmware updates or active system updates unless there is no safer recovery option."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-blue-screen-error",
+      "title": "Windows displays a blue screen",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["BSOD", "blue screen", "stop code", "system crash"],
+      "symptoms": ["Windows restarts after a blue screen", "A stop code is displayed"],
+      "diagnosis": {"question": "Did the blue screen begin after installing new hardware or a driver?", "answers": {"yes": "review-recent-driver", "no": "record-stop-code"}},
+      "steps": {
+        "review-recent-driver": {"instruction": "Record the new hardware or driver and check the manufacturer's support instructions.", "next": ""},
+        "record-stop-code": {"instruction": "Photograph or write down the exact stop code and any named file.", "next": ""}
+      },
+      "solutions": ["Disconnect recently added nonessential peripherals if safe.", "Install appropriate updates from trusted manufacturer sources.", "Use Windows recovery options if the computer cannot start normally."],
+      "safety": ["Back up data if Windows remains accessible.", "Do not download random driver-fixer utilities."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-bluetooth-device-not-connecting",
+      "title": "Bluetooth device will not connect to Windows",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["Bluetooth pairing", "headphones", "mouse", "keyboard"],
+      "symptoms": ["Device does not appear", "Pairing fails"],
+      "diagnosis": {"question": "Is the Bluetooth accessory in pairing mode and not already connected to another device?", "answers": {"yes": "check-windows-bluetooth", "no": "enable-pairing-mode"}},
+      "steps": {
+        "check-windows-bluetooth": {"instruction": "Check that Bluetooth is enabled in Windows Settings and that the accessory is nearby.", "next": ""},
+        "enable-pairing-mode": {"instruction": "Follow the accessory manufacturer's instructions to enter pairing mode and disconnect it from other devices if needed.", "next": ""}
+      },
+      "solutions": ["Turn Bluetooth off and on again.", "Remove the old pairing and pair the accessory again.", "Check the accessory battery.", "Install Bluetooth drivers through Windows Update or the PC manufacturer."],
+      "safety": ["Only remove a pairing if you can pair the device again."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-microphone-not-working",
+      "title": "Microphone not working in Windows",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["microphone", "no sound input", "voice not detected"],
+      "symptoms": ["Apps cannot hear speech", "Microphone level stays low"],
+      "diagnosis": {"question": "Does the microphone work in Windows sound settings?", "answers": {"yes": "check-app-permissions", "no": "check-input-device"}},
+      "steps": {
+        "check-app-permissions": {"instruction": "Check the affected application's microphone permission and selected input device.", "next": ""},
+        "check-input-device": {"instruction": "Open Windows sound settings and confirm the intended microphone is selected.", "next": ""}
+      },
+      "solutions": ["Unmute the microphone and check its physical connection.", "Allow microphone access for the intended application.", "Select the correct input device.", "Update audio drivers from a trusted source if necessary."],
+      "safety": ["Do not grant microphone access to apps that do not need it."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-speakers-no-sound",
+      "title": "No sound from Windows speakers",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["no audio", "speaker sound", "volume", "audio output"],
+      "symptoms": ["Video plays silently", "Volume appears normal but no sound is heard"],
+      "diagnosis": {"question": "Is sound playing through another output device, such as Bluetooth headphones?", "answers": {"yes": "select-correct-output", "no": "check-volume-mute"}},
+      "steps": {
+        "select-correct-output": {"instruction": "Open sound settings and select the intended speakers or headphones as the output device.", "next": ""},
+        "check-volume-mute": {"instruction": "Check system volume, application volume, mute controls, and speaker connections.", "next": ""}
+      },
+      "solutions": ["Choose the correct audio output.", "Disconnect an unintended Bluetooth audio device.", "Run the Windows audio troubleshooter if available.", "Check for appropriate audio driver updates."],
+      "safety": ["Do not open powered speakers or electrical equipment."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-printer-not-printing",
+      "title": "Printer will not print from Windows",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["printer offline", "print queue", "printing problem"],
+      "symptoms": ["Print jobs remain queued", "Printer reports offline"],
+      "diagnosis": {"question": "Does the printer show an error or offline status?", "answers": {"yes": "check-printer-status", "no": "check-print-queue"}},
+      "steps": {
+        "check-printer-status": {"instruction": "Read the printer display and check paper, ink or toner, and connection indicators.", "next": ""},
+        "check-print-queue": {"instruction": "Open the Windows print queue and check whether a job is paused or stuck.", "next": ""}
+      },
+      "solutions": ["Check the USB or Wi-Fi connection.", "Confirm the intended printer is selected.", "Clear a stuck print job if safe to do so.", "Restart the printer and computer if no job is actively processing."],
+      "safety": ["Follow the printer manual when clearing jams; hot components may be present."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-app-wont-open",
+      "title": "A Windows application will not open",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["application crash", "program not opening", "app launch failure"],
+      "symptoms": ["Nothing happens after clicking the app", "The app opens and immediately closes"],
+      "diagnosis": {"question": "Did the problem start immediately after an app update or installation?", "answers": {"yes": "review-app-change", "no": "check-app-repair"}},
+      "steps": {
+        "review-app-change": {"instruction": "Check the app's official release notes and support page for known problems with the recent change.", "next": ""},
+        "check-app-repair": {"instruction": "Check whether Windows Settings offers a Repair option for this application.", "next": ""}
+      },
+      "solutions": ["Restart Windows.", "Install updates from the app's official source.", "Use the app's repair option if available.", "Reinstall only after confirming important app data is backed up."],
+      "safety": ["Do not download replacement installers from untrusted websites."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-file-explorer-not-responding",
+      "title": "File Explorer stops responding",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["Explorer frozen", "folders not opening", "Windows file manager"],
+      "symptoms": ["Folder windows freeze", "Taskbar or desktop becomes unresponsive"],
+      "diagnosis": {"question": "Does File Explorer freeze only when opening one particular folder?", "answers": {"yes": "inspect-specific-folder", "no": "restart-explorer"}},
+      "steps": {
+        "inspect-specific-folder": {"instruction": "Check whether the folder contains a very large number of files or files on an unavailable network drive.", "next": ""},
+        "restart-explorer": {"instruction": "If safe, use Task Manager to restart Windows Explorer.", "next": ""}
+      },
+      "solutions": ["Wait briefly if a large folder is loading.", "Disconnect unavailable network locations if appropriate.", "Install Windows updates.", "Check disk health if freezes recur."],
+      "safety": ["Back up important files before running disk repair tools."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-keyboard-not-working",
+      "title": "Keyboard not working in Windows",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["keyboard keys", "USB keyboard", "wireless keyboard"],
+      "symptoms": ["Keystrokes are not registered", "Some keys do not respond"],
+      "diagnosis": {"question": "Does the keyboard work before Windows starts or on another device?", "answers": {"yes": "check-windows-settings", "no": "check-keyboard-connection"}},
+      "steps": {
+        "check-windows-settings": {"instruction": "Check accessibility keyboard settings and whether the issue occurs in multiple applications.", "next": ""},
+        "check-keyboard-connection": {"instruction": "Check the cable, USB port, wireless receiver, batteries, and keyboard power.", "next": ""}
+      },
+      "solutions": ["Reconnect the keyboard.", "Try another USB port.", "Replace or recharge batteries where applicable.", "Restart Windows and check for driver updates."],
+      "safety": ["Do not spill liquids onto the keyboard or open a battery pack."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-webcam-not-working",
+      "title": "Webcam not working on Windows",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["camera not detected", "webcam", "video call camera"],
+      "symptoms": ["Camera app shows an error", "Video calls show a black image"],
+      "diagnosis": {"question": "Can another application use the camera?", "answers": {"yes": "check-app-settings", "no": "check-camera-permission"}},
+      "steps": {
+        "check-app-settings": {"instruction": "Select the correct camera in the affected application's settings and close other apps using it.", "next": ""},
+        "check-camera-permission": {"instruction": "Check Windows camera privacy permissions, any physical shutter, and the camera device status.", "next": ""}
+      },
+      "solutions": ["Close other applications using the camera.", "Allow camera access for the intended app.", "Check the physical privacy shutter.", "Update the camera driver from the PC manufacturer if necessary."],
+      "safety": ["Grant camera permission only to trusted applications."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-laptop-battery-draining-quickly",
+      "title": "Windows laptop battery drains quickly",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["battery drain", "laptop battery", "power usage"],
+      "symptoms": ["Battery percentage drops quickly", "Laptop runtime is shorter than usual"],
+      "diagnosis": {"question": "Did battery life change suddenly?", "answers": {"yes": "check-recent-apps", "no": "check-power-usage"}},
+      "steps": {
+        "check-recent-apps": {"instruction": "Check recent software changes and whether an application is using unusually high power.", "next": ""},
+        "check-power-usage": {"instruction": "Review Windows power usage and battery health information if available.", "next": ""}
+      },
+      "solutions": ["Reduce screen brightness when practical.", "Use an appropriate power mode.", "Close applications that are not needed.", "Check battery health using the manufacturer's diagnostic utility."],
+      "safety": ["Stop using a battery that is swollen, leaking, unusually hot, or emitting an unusual smell; seek qualified service."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-laptop-overheating",
+      "title": "Windows laptop overheating",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["laptop hot", "fan noise", "overheating", "thermal throttling"],
+      "symptoms": ["Laptop becomes unusually hot", "Fan runs loudly", "Performance slows"],
+      "diagnosis": {"question": "Is the laptop hot even when only light tasks are running?", "answers": {"yes": "check-ventilation", "no": "check-heavy-workload"}},
+      "steps": {
+        "check-ventilation": {"instruction": "Place the laptop on a hard, flat surface and check that air vents are unobstructed.", "next": ""},
+        "check-heavy-workload": {"instruction": "Check Task Manager for applications using unusually high CPU or GPU resources.", "next": ""}
+      },
+      "solutions": ["Keep ventilation openings clear.", "Close unnecessary high-load applications.", "Install appropriate manufacturer updates.", "Arrange service if overheating continues."],
+      "safety": ["Stop using the device if it smells burnt, emits smoke, or becomes dangerously hot.", "Do not insert objects into cooling vents."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-wont-start",
+      "title": "Windows computer will not start",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["PC won't boot", "Windows startup", "computer won't start"],
+      "symptoms": ["Computer powers on but Windows does not load", "Startup repair appears"],
+      "diagnosis": {"question": "Does the computer show any power lights or manufacturer logo?", "answers": {"yes": "check-startup-message", "no": "check-power-source"}},
+      "steps": {
+        "check-startup-message": {"instruction": "Record any error message and note whether Windows recovery options appear.", "next": ""},
+        "check-power-source": {"instruction": "Check the outlet, charger or power cable, and external power indicators.", "next": ""}
+      },
+      "solutions": ["Disconnect nonessential external devices.", "Use Windows recovery options according to Microsoft's instructions.", "Seek qualified support if hardware failure is suspected."],
+      "safety": ["Do not open a power supply or laptop battery compartment unless the manufacturer explicitly provides safe user instructions.", "Consider data recovery before resetting or reinstalling Windows."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-search-not-working",
+      "title": "Windows Search does not find files",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["Start search", "file search", "search index"],
+      "symptoms": ["Expected files are missing from search results", "Search returns no results"],
+      "diagnosis": {"question": "Can you find the file by browsing to its folder in File Explorer?", "answers": {"yes": "check-indexing", "no": "check-file-location"}},
+      "steps": {
+        "check-indexing": {"instruction": "Check Windows indexing settings and whether the folder is included in indexed locations.", "next": ""},
+        "check-file-location": {"instruction": "Search other likely folders and confirm the file has not been moved or deleted.", "next": ""}
+      },
+      "solutions": ["Allow indexing to finish.", "Check search filters and file extensions.", "Run the search troubleshooter if available.", "Restore deleted files from a backup if necessary."],
+      "safety": ["Do not delete the search index database manually unless following official repair instructions."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-external-drive-not-visible",
+      "title": "External drive not visible in Windows",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["USB drive missing", "external hard drive", "drive letter"],
+      "symptoms": ["Drive does not appear in File Explorer", "USB storage is not accessible"],
+      "diagnosis": {"question": "Does the drive appear in Disk Management?", "answers": {"yes": "inspect-disk-status", "no": "check-usb-connection"}},
+      "steps": {
+        "inspect-disk-status": {"instruction": "Read the drive's status carefully and do not initialize or format it if it contains important data.", "next": ""},
+        "check-usb-connection": {"instruction": "Try a known-good USB port and cable, and check whether the drive receives power.", "next": ""}
+      },
+      "solutions": ["Try another compatible cable or port.", "Check Device Manager for device errors.", "Assign a drive letter only if the existing partition is healthy and the action is appropriate."],
+      "safety": ["Never format or initialize a drive containing needed data.", "Stop repeated attempts if the drive clicks, disconnects repeatedly, or contains irreplaceable files."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-file-wont-delete",
+      "title": "Windows says a file is in use and will not delete",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["file cannot be deleted", "file in use", "access denied"],
+      "symptoms": ["Windows reports that a file is open", "Deletion is denied"],
+      "diagnosis": {"question": "Do you recognize the file and know that it is safe to remove?", "answers": {"yes": "close-file-users", "no": "identify-file-first"}},
+      "steps": {
+        "close-file-users": {"instruction": "Close applications that may be using the file and try again.", "next": ""},
+        "identify-file-first": {"instruction": "Check the file path, name, and source before attempting to remove it.", "next": ""}
+      },
+      "solutions": ["Close the application using the file.", "Restart Windows and try again if the file is known to be safe.", "Check permissions for files you own."],
+      "safety": ["Do not force-delete unknown system files or files belonging to running applications."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-date-and-time-wrong",
+      "title": "Windows date or time is incorrect",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["wrong clock", "time zone", "date incorrect"],
+      "symptoms": ["Clock shows the wrong time", "Websites report certificate or time errors"],
+      "diagnosis": {"question": "Is the time wrong by approximately a whole number of hours?", "answers": {"yes": "check-time-zone", "no": "check-time-sync"}},
+      "steps": {
+        "check-time-zone": {"instruction": "Open Date and Time settings and verify the selected time zone.", "next": ""},
+        "check-time-sync": {"instruction": "Check automatic time settings and use the available synchronization option.", "next": ""}
+      },
+      "solutions": ["Enable automatic time if appropriate.", "Select the correct time zone.", "Synchronize the clock while connected to the internet."],
+      "safety": ["Do not install unknown clock-fixing utilities."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-usb-device-not-recognized",
+      "title": "USB device is not recognized by Windows",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["USB error", "device descriptor", "USB not detected"],
+      "symptoms": ["Windows reports an unrecognized USB device", "Device does not appear"],
+      "diagnosis": {"question": "Does the device work in another USB port or computer?", "answers": {"yes": "check-original-port", "no": "check-device-cable"}},
+      "steps": {
+        "check-original-port": {"instruction": "Inspect the original port and check whether other devices work in it.", "next": ""},
+        "check-device-cable": {"instruction": "Check the cable, device power, and manufacturer compatibility guidance.", "next": ""}
+      },
+      "solutions": ["Reconnect the device.", "Try another known-good port or compatible cable.", "Restart Windows.", "Check Device Manager and trusted driver updates."],
+      "safety": ["Disconnect a USB device immediately if it becomes unusually hot or smells burnt."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-app-has-no-internet",
+      "title": "One Windows application cannot access the internet",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["app offline", "firewall", "proxy", "network access"],
+      "symptoms": ["Other applications have internet access", "One application reports offline"],
+      "diagnosis": {"question": "Can the application access the internet when a VPN is disconnected, if you normally use one?", "answers": {"yes": "check-vpn-settings", "no": "check-app-network-settings"}},
+      "steps": {
+        "check-vpn-settings": {"instruction": "Check whether the VPN or its network policy affects this application's connection.", "next": ""},
+        "check-app-network-settings": {"instruction": "Check the application's own proxy, account, server, and network settings.", "next": ""}
+      },
+      "solutions": ["Check the service's status page.", "Verify date and time settings.", "Review firewall rules for the application.", "Update the app from its official source."],
+      "safety": ["Do not disable the firewall permanently or bypass workplace security policies."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "windows-zip-file-wont-open",
+      "title": "ZIP archive will not open or extract",
+      "category": "windows",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["ZIP error", "compressed folder", "archive corrupt"],
+      "symptoms": ["Extraction reports an error", "Archive appears incomplete"],
+      "diagnosis": {"question": "Did the archive finish downloading completely?", "answers": {"yes": "check-archive-integrity", "no": "download-again"}},
+      "steps": {
+        "check-archive-integrity": {"instruction": "Check the file size and try opening the archive with a trusted archive utility.", "next": ""},
+        "download-again": {"instruction": "Download the archive again from the original trusted source.", "next": ""}
+      },
+      "solutions": ["Try Windows' built-in extraction feature.", "Use a reputable archive utility.", "Request a new copy if the archive is corrupt."],
+      "safety": ["Do not run executable files from an archive unless you trust the source and expected contents."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-phone-charging-slowly",
+      "title": "Android phone charges slowly",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["slow charging", "charger", "USB cable", "battery"],
+      "symptoms": ["Battery percentage rises slowly", "Fast charging does not activate"],
+      "diagnosis": {"question": "Are you using a compatible charger and cable that previously charged this phone normally?", "answers": {"yes": "check-phone-temperature", "no": "check-charger-cable"}},
+      "steps": {
+        "check-phone-temperature": {"instruction": "Check whether the phone is hot or very cold, because temperature can reduce charging speed.", "next": ""},
+        "check-charger-cable": {"instruction": "Try a compatible, known-good charger and cable from a reputable source.", "next": ""}
+      },
+      "solutions": ["Use a compatible charger and undamaged cable.", "Avoid heavy gaming while charging.", "Check for lint or debris without inserting metal objects into the port.", "Restart the phone if charging behaviour remains abnormal."],
+      "safety": ["Stop charging if the phone or battery swells, smokes, smells unusual, or becomes dangerously hot.", "Do not use damaged chargers or cables."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-battery-drains-quickly",
+      "title": "Android phone battery drains quickly",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["battery drain", "phone battery", "background apps"],
+      "symptoms": ["Battery drops quickly", "Phone needs frequent charging"],
+      "diagnosis": {"question": "Did battery drain begin after installing or updating an app?", "answers": {"yes": "check-recent-app", "no": "check-battery-usage"}},
+      "steps": {
+        "check-recent-app": {"instruction": "Check the recently installed or updated app's battery usage and behaviour.", "next": ""},
+        "check-battery-usage": {"instruction": "Open Android battery settings and inspect which apps use the most power.", "next": ""}
+      },
+      "solutions": ["Reduce screen brightness when practical.", "Restrict background activity for apps that do not need it.", "Update apps and Android through official channels.", "Restart the phone and observe whether the drain continues."],
+      "safety": ["Stop using a phone with a swollen or unusually hot battery and seek qualified service."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-phone-overheating",
+      "title": "Android phone becomes unusually hot",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["phone hot", "overheating", "temperature warning"],
+      "symptoms": ["Phone feels unusually hot", "Performance slows or charging pauses"],
+      "diagnosis": {"question": "Is the phone hot while charging or performing a demanding task?", "answers": {"yes": "stop-heavy-use", "no": "check-background-activity"}},
+      "steps": {
+        "stop-heavy-use": {"instruction": "Stop demanding tasks, unplug the charger if safe, and let the phone cool in a shaded, ventilated place.", "next": ""},
+        "check-background-activity": {"instruction": "Check battery usage and recent app activity after the phone has cooled.", "next": ""}
+      },
+      "solutions": ["Remove a thick case temporarily if the manufacturer permits.", "Avoid direct sunlight and demanding tasks while charging.", "Install official updates.", "Seek service if overheating recurs during light use."],
+      "safety": ["Do not put the phone in a refrigerator or freezer.", "Stop using it if it swells, smokes, leaks, or becomes dangerously hot."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-phone-wont-turn-on",
+      "title": "Android phone will not turn on",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["phone dead", "black screen", "won't power on"],
+      "symptoms": ["Screen remains black", "Phone does not respond to the power button"],
+      "diagnosis": {"question": "Does the phone show any charging icon, vibration, or sound?", "answers": {"yes": "check-display", "no": "check-charging"}},
+      "steps": {
+        "check-display": {"instruction": "Check whether the phone may be powered on with a failed or blank display.", "next": ""},
+        "check-charging": {"instruction": "Use a compatible charger and cable, and allow time for a deeply discharged battery to respond.", "next": ""}
+      },
+      "solutions": ["Try a known-good compatible charger and cable.", "Follow the manufacturer's forced-restart instructions for the exact model.", "Seek service if there is still no response."],
+      "safety": ["Do not open the phone or puncture the battery.", "Do not charge a swollen, wet, or physically damaged phone."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-app-keeps-crashing",
+      "title": "An Android app keeps crashing",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["app crash", "app closes", "Android error"],
+      "symptoms": ["App closes unexpectedly", "App displays an error repeatedly"],
+      "diagnosis": {"question": "Does the problem happen with only one app?", "answers": {"yes": "repair-one-app", "no": "check-system-updates"}},
+      "steps": {
+        "repair-one-app": {"instruction": "Check for an app update and review the app's official support information.", "next": ""},
+        "check-system-updates": {"instruction": "Check Android system updates and whether storage is nearly full.", "next": ""}
+      },
+      "solutions": ["Restart the phone.", "Update the app through the official app store.", "Clear the app cache if the option is available.", "Reinstall only after checking whether the app stores important local data."],
+      "safety": ["Clearing app data or reinstalling may erase local information; confirm backups first."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-phone-storage-full",
+      "title": "Android phone storage is full",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["storage full", "phone space", "cannot install app"],
+      "symptoms": ["Apps cannot update", "Camera cannot save photos", "Low storage warning appears"],
+      "diagnosis": {"question": "Does Android storage settings show that photos or videos use most of the space?", "answers": {"yes": "review-media-backup", "no": "review-app-storage"}},
+      "steps": {
+        "review-media-backup": {"instruction": "Review large photos and videos and confirm whether safe backups exist before removing any.", "next": ""},
+        "review-app-storage": {"instruction": "Check which apps and downloaded files occupy the most storage.", "next": ""}
+      },
+      "solutions": ["Remove unwanted downloads after reviewing them.", "Use the phone's built-in storage manager.", "Back up important media before deleting local copies.", "Uninstall apps you no longer use."],
+      "safety": ["Do not delete unknown folders or app data without understanding the consequences.", "Verify backups before deleting originals."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-mobile-data-not-working",
+      "title": "Android mobile data is not working",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["mobile internet", "cellular data", "4G", "5G"],
+      "symptoms": ["Phone has cellular signal but no internet", "Apps cannot load using mobile data"],
+      "diagnosis": {"question": "Can the phone make calls or send messages, and is mobile data enabled?", "answers": {"yes": "check-data-plan", "no": "check-network-signal"}},
+      "steps": {
+        "check-data-plan": {"instruction": "Check the data allowance, carrier account status, and whether the affected app is allowed to use mobile data.", "next": ""},
+        "check-network-signal": {"instruction": "Check coverage, airplane mode, SIM status, and any carrier outage.", "next": ""}
+      },
+      "solutions": ["Toggle airplane mode off and on.", "Restart the phone.", "Check the preferred network mode and data limit settings.", "Contact the carrier if account or network issues are suspected."],
+      "safety": ["Do not change unknown APN values; record existing settings before modifying them."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-wifi-wont-connect",
+      "title": "Android phone will not connect to Wi-Fi",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["Android Wi-Fi", "cannot connect", "wrong password"],
+      "symptoms": ["Wi-Fi connection fails", "Phone repeatedly disconnects"],
+      "diagnosis": {"question": "Can another device connect to the same Wi-Fi network?", "answers": {"yes": "check-phone-network-settings", "no": "check-router"}},
+      "steps": {
+        "check-phone-network-settings": {"instruction": "Confirm the correct network and password, and check whether the phone is blocked by network access controls.", "next": ""},
+        "check-router": {"instruction": "Check router power, internet status, and whether the network is visible to other devices.", "next": ""}
+      },
+      "solutions": ["Toggle Wi-Fi off and on.", "Restart the phone and, if appropriate, the router.", "Forget and rejoin the network if you know the password.", "Reset network settings only after understanding that saved networks and related settings may be removed."],
+      "safety": ["Do not share the Wi-Fi password publicly."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-bluetooth-not-pairing",
+      "title": "Android Bluetooth device will not pair",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["Bluetooth pairing", "headphones", "speaker", "watch"],
+      "symptoms": ["Accessory does not appear in the device list", "Pairing fails"],
+      "diagnosis": {"question": "Is the accessory powered on, charged, and in pairing mode?", "answers": {"yes": "check-old-pairing", "no": "enable-accessory-pairing"}},
+      "steps": {
+        "check-old-pairing": {"instruction": "Check whether the accessory is connected to another phone or has a stale saved pairing.", "next": ""},
+        "enable-accessory-pairing": {"instruction": "Follow the accessory's manual to enter pairing mode and charge it if needed.", "next": ""}
+      },
+      "solutions": ["Keep the devices close together.", "Turn Bluetooth off and on.", "Remove the old pairing and pair again if appropriate.", "Check manufacturer compatibility guidance."],
+      "safety": ["Only reset the accessory if you understand what settings will be erased."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-notifications-not-arriving",
+      "title": "Android app notifications are not arriving",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["notifications missing", "push alerts", "background restrictions"],
+      "symptoms": ["Messages appear only when opening the app", "No notification sound or banner"],
+      "diagnosis": {"question": "Are notifications enabled for the affected app in Android settings?", "answers": {"yes": "check-battery-background", "no": "enable-notifications"}},
+      "steps": {
+        "check-battery-background": {"instruction": "Check battery optimization, background data, and the app's own notification settings.", "next": ""},
+        "enable-notifications": {"instruction": "Enable the required notification categories for the app.", "next": ""}
+      },
+      "solutions": ["Enable notifications in system and app settings.", "Check Do Not Disturb and notification channels.", "Allow necessary background activity for trusted messaging apps.", "Update the app."],
+      "safety": ["Avoid disabling all battery protections globally; change settings only for apps that need them."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-phone-microphone-not-working",
+      "title": "Android phone microphone not working",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["microphone", "voice calls", "voice recording"],
+      "symptoms": ["Other people cannot hear you", "Voice recordings are silent"],
+      "diagnosis": {"question": "Does the microphone fail in every app or only one app?", "answers": {"yes": "check-system-microphone", "no": "check-app-permission"}},
+      "steps": {
+        "check-system-microphone": {"instruction": "Test with the built-in recorder or a supported diagnostic feature and inspect the microphone openings for obstruction.", "next": ""},
+        "check-app-permission": {"instruction": "Check the affected app's microphone permission and its own input settings.", "next": ""}
+      },
+      "solutions": ["Remove accessories that may block the microphone.", "Check app permissions.", "Restart the phone.", "Seek service if multiple apps fail after software checks."],
+      "safety": ["Do not insert pins or liquids into microphone openings."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-phone-speaker-no-sound",
+      "title": "Android phone speaker has no sound",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["phone no sound", "media volume", "speaker"],
+      "symptoms": ["Media plays silently", "Ringtone cannot be heard"],
+      "diagnosis": {"question": "Is audio being routed to Bluetooth headphones or another output device?", "answers": {"yes": "select-phone-speaker", "no": "check-volume-mode"}},
+      "steps": {
+        "select-phone-speaker": {"instruction": "Disconnect the unintended Bluetooth device or select the intended audio output.", "next": ""},
+        "check-volume-mode": {"instruction": "Check media volume, ringtone volume, silent mode, and Do Not Disturb.", "next": ""}
+      },
+      "solutions": ["Raise the correct volume slider.", "Disconnect unwanted audio accessories.", "Restart the phone.", "Test more than one app to determine whether the problem is app-specific."],
+      "safety": ["Do not insert sharp objects into speaker openings."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-camera-black-screen",
+      "title": "Android camera shows a black screen",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["camera black screen", "camera not opening", "Android camera"],
+      "symptoms": ["Camera preview is black", "Camera app crashes"],
+      "diagnosis": {"question": "Does the camera work in another trusted app?", "answers": {"yes": "check-camera-app", "no": "check-camera-access"}},
+      "steps": {
+        "check-camera-app": {"instruction": "Check the original camera app's permissions, updates, and cache.", "next": ""},
+        "check-camera-access": {"instruction": "Check the Android camera privacy toggle, permissions, and whether another app is using the camera.", "next": ""}
+      },
+      "solutions": ["Close apps that use the camera.", "Restart the phone.", "Install official system and app updates.", "Seek service if both cameras fail across apps."],
+      "safety": ["Do not install unknown camera apps that request unnecessary permissions."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-play-store-download-pending",
+      "title": "Google Play Store download remains pending",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["Play Store pending", "app download stuck", "Android app install"],
+      "symptoms": ["Download stays pending", "Apps do not install"],
+      "diagnosis": {"question": "Can the phone access websites and does it have enough free storage?", "answers": {"yes": "check-play-queue", "no": "check-network-storage"}},
+      "steps": {
+        "check-play-queue": {"instruction": "Check whether other downloads are queued and whether Play Store updates are in progress.", "next": ""},
+        "check-network-storage": {"instruction": "Restore internet access and free storage if necessary.", "next": ""}
+      },
+      "solutions": ["Check the Play Store download queue.", "Restart the phone.", "Check date and time settings.", "Clear Play Store cache if the issue continues."],
+      "safety": ["Do not download app installation files from untrusted websites."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-app-installation-failed",
+      "title": "Android app installation fails",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["app not installing", "installation error", "incompatible app"],
+      "symptoms": ["Install button fails", "Android reports an installation error"],
+      "diagnosis": {"question": "Does the app store say that the app is incompatible with your device?", "answers": {"yes": "check-compatibility", "no": "check-storage-install"}},
+      "steps": {
+        "check-compatibility": {"instruction": "Check the app's supported Android versions, device requirements, and region availability.", "next": ""},
+        "check-storage-install": {"instruction": "Check available storage, network access, and whether the installation source is trusted.", "next": ""}
+      },
+      "solutions": ["Free storage if needed.", "Update Android where supported.", "Restart the phone and retry through the official store.", "Contact the app developer if the store reports a persistent error."],
+      "safety": ["Avoid bypassing Android security protections to install an untrusted APK."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-phone-keeps-restarting",
+      "title": "Android phone keeps restarting",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["boot loop", "random restart", "phone rebooting"],
+      "symptoms": ["Phone restarts without warning", "Phone repeatedly returns to the startup logo"],
+      "diagnosis": {"question": "Did the restarting begin after installing an app or update?", "answers": {"yes": "review-recent-change", "no": "check-power-storage"}},
+      "steps": {
+        "review-recent-change": {"instruction": "Identify the recent app or update and check official troubleshooting guidance.", "next": ""},
+        "check-power-storage": {"instruction": "Check whether the phone overheats, has very low storage, or has a damaged power button.", "next": ""}
+      },
+      "solutions": ["Remove recently installed problematic apps if the phone remains usable.", "Install official updates when stable.", "Back up data if possible.", "Seek service if the phone repeatedly boot-loops."],
+      "safety": ["Do not factory-reset before considering data backup and recovery options."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-screen-unresponsive",
+      "title": "Android touchscreen is unresponsive",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["touchscreen not working", "screen frozen", "touch failure"],
+      "symptoms": ["Touches do not register", "Only part of the screen responds"],
+      "diagnosis": {"question": "Is the screen physically cracked, wet, or visibly damaged?", "answers": {"yes": "protect-device", "no": "check-screen-software"}},
+      "steps": {
+        "protect-device": {"instruction": "Stop using the damaged or wet device and follow the manufacturer's safety and service guidance.", "next": ""},
+        "check-screen-software": {"instruction": "Remove accessories that may interfere with touch and follow the manufacturer's restart procedure.", "next": ""}
+      },
+      "solutions": ["Clean and dry the screen with an appropriate soft cloth.", "Remove a problematic screen protector if safe.", "Restart the phone using the model's instructions.", "Seek repair if the touch failure persists."],
+      "safety": ["Do not press hard on cracked glass or attempt to open the phone."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-sim-not-detected",
+      "title": "Android phone does not detect the SIM card",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["SIM not detected", "no SIM", "mobile network"],
+      "symptoms": ["Phone reports no SIM", "Mobile service is unavailable"],
+      "diagnosis": {"question": "Did the phone recently fall, get wet, or have its SIM removed?", "answers": {"yes": "inspect-sim-safely", "no": "check-carrier-status"}},
+      "steps": {
+        "inspect-sim-safely": {"instruction": "Power the phone off if the manual requires it, then inspect the SIM tray and card for obvious damage.", "next": ""},
+        "check-carrier-status": {"instruction": "Check for carrier outages, account issues, or SIM activation problems.", "next": ""}
+      },
+      "solutions": ["Restart the phone.", "Reseat the SIM according to the device manual.", "Check whether the SIM works in a compatible device if safe and appropriate.", "Contact the carrier for a replacement SIM if needed."],
+      "safety": ["Do not force the SIM tray or use a damaged SIM card."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-mobile-hotspot-not-working",
+      "title": "Android mobile hotspot will not connect other devices",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["mobile hotspot", "tethering", "connected no internet"],
+      "symptoms": ["Other devices cannot join the hotspot", "Connected devices have no internet"],
+      "diagnosis": {"question": "Can the phone itself access the internet using mobile data?", "answers": {"yes": "check-hotspot-settings", "no": "fix-mobile-data-first"}},
+      "steps": {
+        "check-hotspot-settings": {"instruction": "Check hotspot enablement, password, device limit, band compatibility, and carrier restrictions.", "next": ""},
+        "fix-mobile-data-first": {"instruction": "Resolve the phone's mobile data connection before troubleshooting tethering.", "next": ""}
+      },
+      "solutions": ["Restart the hotspot and the connecting device.", "Check the hotspot password and security settings.", "Try a compatible hotspot band if available.", "Check carrier tethering limits."],
+      "safety": ["Use a strong hotspot password and disable the hotspot when it is not needed."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-storage-sd-card-not-detected",
+      "title": "Android phone does not detect a memory card",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["microSD not detected", "memory card", "SD card error"],
+      "symptoms": ["Card is missing from storage settings", "Phone asks to format the card"],
+      "diagnosis": {"question": "Does the card contain files you need to keep?", "answers": {"yes": "protect-card-data", "no": "check-card-compatibility"}},
+      "steps": {
+        "protect-card-data": {"instruction": "Do not format the card. Check it with a compatible reader or qualified recovery service.", "next": ""},
+        "check-card-compatibility": {"instruction": "Check the phone's supported card types and maximum capacity.", "next": ""}
+      },
+      "solutions": ["Power off before removing the card if the manual recommends it.", "Inspect the card and tray for visible damage.", "Try a compatible reader to distinguish card and phone problems."],
+      "safety": ["Formatting erases data; never format a card containing files you need."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-screen-brightness-keeps-changing",
+      "title": "Android screen brightness keeps changing",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["adaptive brightness", "auto brightness", "screen dimming"],
+      "symptoms": ["Brightness changes automatically", "Screen dims unexpectedly"],
+      "diagnosis": {"question": "Is adaptive or automatic brightness enabled?", "answers": {"yes": "adjust-adaptive-brightness", "no": "check-power-and-heat"}},
+      "steps": {
+        "adjust-adaptive-brightness": {"instruction": "Check the adaptive brightness setting and adjust it in the conditions where it changes.", "next": ""},
+        "check-power-and-heat": {"instruction": "Check battery saver, device temperature, and any extra-dimming features.", "next": ""}
+      },
+      "solutions": ["Adjust adaptive brightness settings.", "Check battery saver and extra dim options.", "Let an overheated phone cool down.", "Restart the phone if behaviour seems abnormal."],
+      "safety": ["Do not disable thermal protection features."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-app-not-enough-permission",
+      "title": "Android app says permission is denied",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["Android permissions", "camera permission", "location permission"],
+      "symptoms": ["App cannot access a feature", "Permission warning appears"],
+      "diagnosis": {"question": "Does the app genuinely need the requested permission for the feature you are using?", "answers": {"yes": "review-permission", "no": "deny-unneeded-permission"}},
+      "steps": {
+        "review-permission": {"instruction": "Open Android app settings and grant only the permission needed for the feature.", "next": ""},
+        "deny-unneeded-permission": {"instruction": "Keep the permission denied and check whether the app offers an alternative workflow.", "next": ""}
+      },
+      "solutions": ["Review the app's permission settings.", "Grant permission only while using the app when that option is available.", "Update the app if a permission bug is known."],
+      "safety": ["Do not grant sensitive permissions to an app you do not trust."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-voice-assistant-not-hearing",
+      "title": "Android voice assistant does not hear speech",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["voice recognition", "microphone", "assistant"],
+      "symptoms": ["Assistant does not respond to speech", "Voice input fails"],
+      "diagnosis": {"question": "Does the phone's microphone work in a recording app?", "answers": {"yes": "check-assistant-settings", "no": "fix-microphone-first"}},
+      "steps": {
+        "check-assistant-settings": {"instruction": "Check the assistant's microphone permission, language, activation settings, and internet access.", "next": ""},
+        "fix-microphone-first": {"instruction": "Troubleshoot the phone microphone before changing assistant settings.", "next": ""}
+      },
+      "solutions": ["Enable the required microphone permission.", "Check the assistant language and voice activation options.", "Check internet connectivity if the feature requires it.", "Update the assistant app."],
+      "safety": ["Review microphone privacy settings and disable voice activation if you do not want it."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-contacts-not-syncing",
+      "title": "Android contacts are not syncing",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["contacts sync", "Google account", "missing contacts"],
+      "symptoms": ["New contacts do not appear on other devices", "Some contacts are missing"],
+      "diagnosis": {"question": "Are the contacts saved to the account you expect to sync?", "answers": {"yes": "check-sync-status", "no": "identify-contact-account"}},
+      "steps": {
+        "check-sync-status": {"instruction": "Check account sync settings and the account's online contacts page.", "next": ""},
+        "identify-contact-account": {"instruction": "Open the contact details and identify whether it is stored on the phone, SIM, or an online account.", "next": ""}
+      },
+      "solutions": ["Enable contacts sync for the intended account.", "Check internet access and account sign-in status.", "Wait for sync to complete.", "Export or back up contacts before account changes."],
+      "safety": ["Do not remove an account or delete contacts before confirming a backup."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-app-not-showing-in-share-menu",
+      "title": "Android app is missing from the Share menu",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["Android share sheet", "share target missing", "sharing file"],
+      "symptoms": ["An app does not appear when sharing content", "Sharing option is unavailable"],
+      "diagnosis": {"question": "Is the content type supported by the receiving app?", "answers": {"yes": "check-app-installation", "no": "use-supported-format"}},
+      "steps": {
+        "check-app-installation": {"instruction": "Check whether the receiving app is installed, updated, and allowed to handle this content type.", "next": ""},
+        "use-supported-format": {"instruction": "Try sharing a file or link type that the receiving app officially supports.", "next": ""}
+      },
+      "solutions": ["Update the receiving app.", "Restart the phone if the share menu appears stuck.", "Use the app's own import or open-file feature if available."],
+      "safety": ["Only share private files with the intended recipient and application."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-mobile-app-data-usage-high",
+      "title": "Android app uses too much mobile data",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["mobile data usage", "background data", "data limit"],
+      "symptoms": ["Data allowance runs out quickly", "Unexpected mobile data charges"],
+      "diagnosis": {"question": "Does Android data usage show the app using significant background data?", "answers": {"yes": "limit-background-data", "no": "check-foreground-usage"}},
+      "steps": {
+        "limit-background-data": {"instruction": "Review the app's background data and unrestricted data settings.", "next": ""},
+        "check-foreground-usage": {"instruction": "Check whether video streaming, downloads, or automatic backups explain the usage.", "next": ""}
+      },
+      "solutions": ["Enable Data Saver if appropriate.", "Restrict background data for apps that do not need it.", "Reduce video quality and automatic downloads.", "Set a mobile data warning or limit."],
+      "safety": ["Be aware that restricting background data may delay notifications or synchronization."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-calls-not-connecting",
+      "title": "Android phone calls will not connect",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["cannot call", "call failed", "cellular service"],
+      "symptoms": ["Outgoing calls fail", "Phone reports network unavailable"],
+      "diagnosis": {"question": "Can the phone show cellular signal and receive calls?", "answers": {"yes": "check-call-settings", "no": "check-carrier-signal"}},
+      "steps": {
+        "check-call-settings": {"instruction": "Check call barring, SIM selection for dual-SIM devices, and carrier calling settings.", "next": ""},
+        "check-carrier-signal": {"instruction": "Check coverage, airplane mode, SIM status, and carrier outage information.", "next": ""}
+      },
+      "solutions": ["Restart the phone.", "Check the selected SIM for calls.", "Check account status with the carrier.", "Contact the carrier if service remains unavailable."],
+      "safety": ["If you need emergency assistance, use any available local emergency calling option or another working phone."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-sms-not-sending",
+      "title": "Android SMS messages are not sending",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["SMS failed", "text message not sent", "messaging app"],
+      "symptoms": ["Messages remain unsent", "SMS failure notification appears"],
+      "diagnosis": {"question": "Can you make a normal phone call using the same SIM?", "answers": {"yes": "check-sms-settings", "no": "check-network-service"}},
+      "steps": {
+        "check-sms-settings": {"instruction": "Check the default SMS app, message centre settings where applicable, and carrier SMS service status.", "next": ""},
+        "check-network-service": {"instruction": "Check signal, SIM status, airplane mode, and carrier service.", "next": ""}
+      },
+      "solutions": ["Restart the phone.", "Check the recipient number and available balance or plan.", "Update the messaging app.", "Contact the carrier if SMS service remains unavailable."],
+      "safety": ["Do not share verification codes with anyone who contacts you unexpectedly."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-alarm-not-ringing",
+      "title": "Android alarm does not ring",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["alarm silent", "clock alarm", "Do Not Disturb"],
+      "symptoms": ["Alarm time passes without sound", "Alarm notification is silent"],
+      "diagnosis": {"question": "Does the alarm appear on screen when its scheduled time arrives?", "answers": {"yes": "check-alarm-sound", "no": "check-alarm-schedule"}},
+      "steps": {
+        "check-alarm-sound": {"instruction": "Check the alarm's selected sound, alarm volume, and any app-specific settings.", "next": ""},
+        "check-alarm-schedule": {"instruction": "Verify the alarm time, selected days, AM/PM where applicable, and app permissions.", "next": ""}
+      },
+      "solutions": ["Choose an audible alarm sound.", "Set alarm volume to a suitable level.", "Test a new alarm a few minutes ahead.", "Update the Clock app."],
+      "safety": ["Do not rely on an untested phone alarm as the sole alert for a critical event."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-phone-vibration-not-working",
+      "title": "Android phone vibration is not working",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["vibration", "haptic feedback", "silent notifications"],
+      "symptoms": ["Calls do not vibrate", "Touch feedback is absent"],
+      "diagnosis": {"question": "Is vibration enabled in sound and accessibility settings?", "answers": {"yes": "check-mode-specific-settings", "no": "enable-vibration"}},
+      "steps": {
+        "check-mode-specific-settings": {"instruction": "Check ringtone, notification, alarm, and haptic settings separately.", "next": ""},
+        "enable-vibration": {"instruction": "Enable the appropriate vibration settings for calls, notifications, or touch feedback.", "next": ""}
+      },
+      "solutions": ["Check Do Not Disturb and sound profile settings.", "Restart the phone.", "Install official updates.", "Seek service if all vibration functions fail."],
+      "safety": ["Do not open the phone to inspect the vibration motor yourself."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-photos-missing",
+      "title": "Photos are missing from Android Gallery",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["missing photos", "Gallery empty", "photo backup"],
+      "symptoms": ["Some pictures no longer appear", "Gallery shows fewer photos than expected"],
+      "diagnosis": {"question": "Are the missing photos visible in a file manager or cloud photo account?", "answers": {"yes": "check-gallery-index", "no": "check-trash-and-backups"}},
+      "steps": {
+        "check-gallery-index": {"instruction": "Check album visibility, hidden folders, and whether the Gallery app needs time to refresh.", "next": ""},
+        "check-trash-and-backups": {"instruction": "Check the photo app's trash or recently deleted area and any available backups.", "next": ""}
+      },
+      "solutions": ["Check hidden albums and filters.", "Restart the phone and allow media scanning to complete.", "Review recently deleted items.", "Restore from a verified backup if necessary."],
+      "safety": ["Do not clear app storage or format a memory card before checking whether the originals are backed up."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-phone-says-moisture-detected",
+      "title": "Android phone reports moisture in the charging port",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["moisture detected", "USB port wet", "charging blocked"],
+      "symptoms": ["Charging is blocked by a moisture warning", "USB connection is disabled"],
+      "diagnosis": {"question": "Could the phone or charging port have been exposed to liquid or high humidity?", "answers": {"yes": "dry-device-safely", "no": "check-port-debris"}},
+      "steps": {
+        "dry-device-safely": {"instruction": "Disconnect the cable and follow the manufacturer's drying guidance; allow the port to dry naturally.", "next": ""},
+        "check-port-debris": {"instruction": "Inspect the port visually without inserting tools and consult manufacturer guidance if the warning persists.", "next": ""}
+      },
+      "solutions": ["Disconnect the charger.", "Allow the device to dry in a well-ventilated place.", "Use wireless charging only if the model supports it and the device is otherwise safe and dry.", "Seek service if the warning remains."],
+      "safety": ["Do not insert metal objects, use a hair dryer, apply heat, or force charging while moisture is suspected."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-phone-not-ringing-for-calls",
+      "title": "Android phone does not ring for incoming calls",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["incoming call silent", "ringer volume", "Do Not Disturb"],
+      "symptoms": ["Incoming calls appear silently", "Only missed-call notifications appear"],
+      "diagnosis": {"question": "Is the phone in silent mode or Do Not Disturb mode?", "answers": {"yes": "review-sound-mode", "no": "check-ringtone-settings"}},
+      "steps": {
+        "review-sound-mode": {"instruction": "Review sound profile and Do Not Disturb rules, including scheduled rules.", "next": ""},
+        "check-ringtone-settings": {"instruction": "Check ringtone volume, selected ringtone, and blocked caller settings.", "next": ""}
+      },
+      "solutions": ["Raise ringtone volume.", "Choose an audible ringtone.", "Review Do Not Disturb schedules.", "Restart the phone and test with a known caller."],
+      "safety": ["Do not disable important emergency alert settings without understanding the consequences."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-screen-rotation-not-working",
+      "title": "Android screen does not rotate automatically",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["auto rotate", "screen orientation", "landscape mode"],
+      "symptoms": ["Screen stays in portrait mode", "Videos do not rotate"],
+      "diagnosis": {"question": "Is Auto-rotate enabled in Quick Settings?", "answers": {"yes": "check-app-support", "no": "enable-auto-rotate"}},
+      "steps": {
+        "check-app-support": {"instruction": "Check whether the current app or screen supports rotation.", "next": ""},
+        "enable-auto-rotate": {"instruction": "Enable Auto-rotate and test with an app that supports landscape orientation.", "next": ""}
+      },
+      "solutions": ["Enable Auto-rotate.", "Restart the phone.", "Update the affected app and Android.", "Seek service if orientation sensors appear to have failed."],
+      "safety": ["Do not install untrusted sensor-calibration apps."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-phone-cannot-update-system",
+      "title": "Android system update will not install",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["Android update failed", "system update", "OTA error"],
+      "symptoms": ["Update download fails", "Installation stops or reports an error"],
+      "diagnosis": {"question": "Does the phone have sufficient free storage and a stable internet connection?", "answers": {"yes": "record-update-error", "no": "free-storage-and-connect"}},
+      "steps": {
+        "record-update-error": {"instruction": "Record the exact error message and check the phone manufacturer's support guidance.", "next": ""},
+        "free-storage-and-connect": {"instruction": "Free space safely and connect to a stable network before trying again.", "next": ""}
+      },
+      "solutions": ["Charge the phone adequately.", "Back up important data.", "Restart and retry the official update.", "Contact the manufacturer if the same error persists."],
+      "safety": ["Do not interrupt an active firmware installation or install unofficial firmware without understanding the risks."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-app-wont-open-links",
+      "title": "Android links open in the wrong app",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["default apps", "open links", "browser association"],
+      "symptoms": ["Links open in an unexpected app", "Android asks which app to use repeatedly"],
+      "diagnosis": {"question": "Is the wrong app set as the default for the link type?", "answers": {"yes": "change-default-app", "no": "check-supported-links"}},
+      "steps": {
+        "change-default-app": {"instruction": "Review Default apps and the affected app's Open by default settings.", "next": ""},
+        "check-supported-links": {"instruction": "Check whether the app supports that link domain or file type.", "next": ""}
+      },
+      "solutions": ["Set the preferred browser or app as the default.", "Clear the wrong app's defaults if that option is available.", "Update the affected apps."],
+      "safety": ["Do not open suspicious links simply to test app handling."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-voice-typing-not-working",
+      "title": "Android voice typing is not working",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["speech to text", "voice typing", "keyboard microphone"],
+      "symptoms": ["Keyboard microphone does not respond", "Speech is not converted to text"],
+      "diagnosis": {"question": "Does the keyboard have microphone permission and an internet connection if required?", "answers": {"yes": "check-language-settings", "no": "check-permission-and-network"}},
+      "steps": {
+        "check-language-settings": {"instruction": "Check voice typing language, keyboard settings, and the selected speech service.", "next": ""},
+        "check-permission-and-network": {"instruction": "Check microphone permission and internet access for services that require online recognition.", "next": ""}
+      },
+      "solutions": ["Enable the intended microphone permission.", "Check keyboard and voice typing settings.", "Select the correct language.", "Update the keyboard app through the official store."],
+      "safety": ["Avoid granting microphone access to untrusted keyboard applications."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-do-not-disturb-turns-on",
+      "title": "Android Do Not Disturb keeps turning on",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["DND schedule", "silent mode automatic", "focus mode"],
+      "symptoms": ["Notifications are silenced unexpectedly", "Do Not Disturb activates automatically"],
+      "diagnosis": {"question": "Is there a scheduled Do Not Disturb rule or automatic mode enabled?", "answers": {"yes": "review-schedules", "no": "check-automation-apps"}},
+      "steps": {
+        "review-schedules": {"instruction": "Review scheduled rules, bedtime modes, driving modes, and calendar-related settings.", "next": ""},
+        "check-automation-apps": {"instruction": "Review trusted automation apps or connected devices that may change the sound profile.", "next": ""}
+      },
+      "solutions": ["Disable unwanted schedules.", "Check bedtime and driving modes.", "Review recently installed automation apps."],
+      "safety": ["Keep essential emergency alerts enabled according to your needs and local settings."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "android-website-not-opening-on-phone",
+      "title": "Websites will not open on Android",
+      "category": "android",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["mobile browser", "web page loading", "internet"],
+      "symptoms": ["Web pages time out", "Browser shows a connection error"],
+      "diagnosis": {"question": "Do the same websites open in another browser or on another network?", "answers": {"yes": "check-original-browser", "no": "check-network-and-site"}},
+      "steps": {
+        "check-original-browser": {"instruction": "Check the original browser's settings, extensions if supported, cache, and content blockers.", "next": ""},
+        "check-network-and-site": {"instruction": "Check mobile data or Wi-Fi connectivity and whether the website is available to other users.", "next": ""}
+      },
+      "solutions": ["Try another browser.", "Check date and time.", "Clear browser cache if appropriate.", "Check VPN, private DNS, or content-filter settings if you use them."],
+      "safety": ["Do not bypass security warnings on websites that handle passwords or payments."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-router-no-internet",
+      "title": "Wi-Fi router has no internet connection",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["router offline", "broadband down", "internet outage"],
+      "symptoms": ["All devices lack internet", "Router internet indicator is abnormal"],
+      "diagnosis": {"question": "Do all devices connected to the router lack internet access?", "answers": {"yes": "check-provider-and-router", "no": "troubleshoot-device"}},
+      "steps": {
+        "check-provider-and-router": {"instruction": "Check the provider's outage information and inspect router and modem status indicators.", "next": ""},
+        "troubleshoot-device": {"instruction": "Troubleshoot the affected device because the router may be working normally.", "next": ""}
+      },
+      "solutions": ["Check cables and power connections.", "Restart modem and router according to provider guidance.", "Contact the internet provider if the connection does not return."],
+      "safety": ["Do not factory-reset the router unless you know the required setup credentials and configuration."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-signal-weak-in-one-room",
+      "title": "Wi-Fi signal is weak in one room",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["weak Wi-Fi", "dead zone", "poor signal"],
+      "symptoms": ["Internet is slow far from router", "Connection drops in certain rooms"],
+      "diagnosis": {"question": "Does the connection improve when you move closer to the router?", "answers": {"yes": "improve-router-placement", "no": "check-internet-speed"}},
+      "steps": {
+        "improve-router-placement": {"instruction": "Test router placement and identify walls, metal objects, and interference between the router and device.", "next": ""},
+        "check-internet-speed": {"instruction": "Test a wired connection or another nearby device to distinguish Wi-Fi coverage from provider speed.", "next": ""}
+      },
+      "solutions": ["Place the router centrally and in an open, elevated location where practical.", "Keep it away from large metal objects and sources of interference.", "Use a suitable access point or mesh system if needed."],
+      "safety": ["Do not place networking equipment where it can overheat or get wet."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-internet-slow",
+      "title": "Internet connection is unusually slow",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["slow internet", "low speed", "buffering"],
+      "symptoms": ["Websites load slowly", "Video buffers frequently"],
+      "diagnosis": {"question": "Is internet slow on multiple devices using the same connection?", "answers": {"yes": "check-router-provider", "no": "check-one-device"}},
+      "steps": {
+        "check-router-provider": {"instruction": "Run a reputable speed test near the router and compare results with your subscribed plan and provider guidance.", "next": ""},
+        "check-one-device": {"instruction": "Check the affected device's Wi-Fi signal, background downloads, VPN, and resource usage.", "next": ""}
+      },
+      "solutions": ["Pause large downloads and backups.", "Restart networking equipment if appropriate.", "Improve Wi-Fi signal.", "Contact the provider if wired speeds remain far below expected levels."],
+      "safety": ["Use reputable speed-test services and avoid installing unknown network optimizers."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-router-keeps-restarting",
+      "title": "Wi-Fi router keeps restarting",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["router reboot", "Wi-Fi drops", "router power"],
+      "symptoms": ["Wi-Fi disappears repeatedly", "Router lights cycle unexpectedly"],
+      "diagnosis": {"question": "Does the router restart even when network usage is low?", "answers": {"yes": "check-power-and-heat", "no": "check-load-and-firmware"}},
+      "steps": {
+        "check-power-and-heat": {"instruction": "Check the correct power adapter, ventilation, and any visible overheating or damage.", "next": ""},
+        "check-load-and-firmware": {"instruction": "Check device load, firmware updates, and logs if the router provides them.", "next": ""}
+      },
+      "solutions": ["Use the manufacturer's specified power adapter.", "Improve ventilation.", "Install firmware from the router manufacturer if recommended.", "Contact the provider if the router is provider-managed."],
+      "safety": ["Do not use a damaged power adapter or open the router's power supply."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-device-keeps-disconnecting",
+      "title": "A device keeps disconnecting from Wi-Fi",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["Wi-Fi drops", "intermittent connection", "wireless disconnect"],
+      "symptoms": ["Device frequently loses Wi-Fi", "Connection returns after reconnecting"],
+      "diagnosis": {"question": "Do other devices remain connected while this device disconnects?", "answers": {"yes": "check-device-settings", "no": "check-router-stability"}},
+      "steps": {
+        "check-device-settings": {"instruction": "Check the device's Wi-Fi driver or software, power-saving settings, and distance from the router.", "next": ""},
+        "check-router-stability": {"instruction": "Check router stability, firmware, interference, and power supply.", "next": ""}
+      },
+      "solutions": ["Restart the affected device.", "Update device software and appropriate network drivers.", "Improve signal strength.", "Forget and reconnect to the network if you know the password."],
+      "safety": ["Avoid changing advanced router security settings without recording the original configuration."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-cannot-connect-new-device",
+      "title": "A new device cannot connect to Wi-Fi",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["new device Wi-Fi", "password error", "network compatibility"],
+      "symptoms": ["Existing devices connect but a new device fails", "Device reports authentication failure"],
+      "diagnosis": {"question": "Are you certain the Wi-Fi password is correct and the network is compatible with the device?", "answers": {"yes": "check-router-access-controls", "no": "verify-password-band"}},
+      "steps": {
+        "check-router-access-controls": {"instruction": "Check router access controls, device limits, and security compatibility.", "next": ""},
+        "verify-password-band": {"instruction": "Re-enter the password carefully and check whether the device supports the router's band and security mode.", "next": ""}
+      },
+      "solutions": ["Verify the exact network name and password.", "Check whether the router has reached a device limit.", "Use a compatible supported Wi-Fi band.", "Restart the device and router if appropriate."],
+      "safety": ["Do not weaken Wi-Fi encryption to an obsolete security mode just to connect a device."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-dns-error",
+      "title": "Websites fail because of a DNS error",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["DNS error", "server IP address could not be found", "name resolution"],
+      "symptoms": ["Browser reports a DNS error", "Some domains fail to resolve"],
+      "diagnosis": {"question": "Do other websites work on the same device and connection?", "answers": {"yes": "check-domain-specific-issue", "no": "check-dns-and-network"}},
+      "steps": {
+        "check-domain-specific-issue": {"instruction": "Check whether the affected website is down or the domain name was typed correctly.", "next": ""},
+        "check-dns-and-network": {"instruction": "Check connectivity and any VPN, proxy, private DNS, or filtering configuration.", "next": ""}
+      },
+      "solutions": ["Restart the browser and router if appropriate.", "Check the configured DNS service status.", "Use the operating system's standard network diagnostics.", "Change DNS only if you understand the privacy and security implications."],
+      "safety": ["Do not enter passwords on a site reached through suspicious redirects."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-router-admin-page-unavailable",
+      "title": "Router administration page will not open",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["router login page", "gateway address", "router settings"],
+      "symptoms": ["Router settings page times out", "Login page cannot be reached"],
+      "diagnosis": {"question": "Are you connected to the router's own network?", "answers": {"yes": "check-gateway-address", "no": "connect-to-router"}},
+      "steps": {
+        "check-gateway-address": {"instruction": "Find the default gateway address from the device's network details and use the router's documented address.", "next": ""},
+        "connect-to-router": {"instruction": "Connect to the router's Wi-Fi or local network before opening its administration page.", "next": ""}
+      },
+      "solutions": ["Use the correct local gateway address.", "Try a different browser.", "Check whether the router uses a documented HTTPS address or mobile app.", "Contact the network administrator if the router is managed by someone else."],
+      "safety": ["Do not expose router administration to the public internet or share its administrator password."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-guest-network-no-internet",
+      "title": "Guest Wi-Fi connects but has no internet",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["guest Wi-Fi", "captive portal", "guest network offline"],
+      "symptoms": ["Guest device connects but cannot browse", "Login page does not appear"],
+      "diagnosis": {"question": "Does the guest network require a sign-in or acceptance page?", "answers": {"yes": "complete-captive-portal", "no": "check-guest-network-policy"}},
+      "steps": {
+        "complete-captive-portal": {"instruction": "Open a browser and follow the legitimate network sign-in instructions.", "next": ""},
+        "check-guest-network-policy": {"instruction": "Check with the network owner whether guest access is enabled and whether devices are restricted.", "next": ""}
+      },
+      "solutions": ["Complete the official sign-in page.", "Reconnect to the guest network.", "Ask the network administrator to check guest access and internet status."],
+      "safety": ["Do not submit sensitive information to an unexpected Wi-Fi login page."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-video-calls-freezing",
+      "title": "Video calls freeze or break up",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["video call lag", "meeting freezes", "packet loss"],
+      "symptoms": ["Video freezes", "Audio breaks up during calls"],
+      "diagnosis": {"question": "Does the problem affect other devices or video-call services too?", "answers": {"yes": "check-connection-load", "no": "check-call-device"}},
+      "steps": {
+        "check-connection-load": {"instruction": "Check whether other devices are using the connection for large downloads or high-resolution streams.", "next": ""},
+        "check-call-device": {"instruction": "Check the affected device's CPU usage, Wi-Fi signal, camera, and app updates.", "next": ""}
+      },
+      "solutions": ["Move closer to the router or use a stable wired connection.", "Pause large downloads.", "Close unnecessary applications.", "Check the meeting service's status and recommended network requirements."],
+      "safety": ["Do not install unknown call-quality optimizer software."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-vpn-blocks-internet",
+      "title": "Internet stops working when VPN is enabled",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["VPN connection", "VPN no internet", "tunnel error"],
+      "symptoms": ["Internet works without VPN", "Websites stop loading after VPN connects"],
+      "diagnosis": {"question": "Does internet access return when you disconnect the VPN?", "answers": {"yes": "check-vpn-server-settings", "no": "check-normal-connection"}},
+      "steps": {
+        "check-vpn-server-settings": {"instruction": "Check VPN server status, protocol settings, and provider troubleshooting guidance.", "next": ""},
+        "check-normal-connection": {"instruction": "Troubleshoot the underlying internet connection before focusing on the VPN.", "next": ""}
+      },
+      "solutions": ["Reconnect to the VPN.", "Try another server provided by the same trusted VPN service.", "Update the VPN app.", "Contact the VPN provider if the issue persists."],
+      "safety": ["Do not disable a required work VPN or security control without authorization."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-connected-but-some-sites-fail",
+      "title": "Some websites work while others fail",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["website unavailable", "DNS", "site blocked", "partial internet"],
+      "symptoms": ["Only some websites fail", "Different browsers show different errors"],
+      "diagnosis": {"question": "Does the same website fail on another device or network?", "answers": {"yes": "check-website-status", "no": "check-device-filtering"}},
+      "steps": {
+        "check-website-status": {"instruction": "Check the site's official status information and verify the exact address.", "next": ""},
+        "check-device-filtering": {"instruction": "Check browser extensions, parental controls, DNS filtering, VPN, and security software settings.", "next": ""}
+      },
+      "solutions": ["Try another browser.", "Check whether a content blocker or network filter is responsible.", "Check DNS configuration if appropriate.", "Wait if the website itself is experiencing an outage."],
+      "safety": ["Do not bypass organizational or parental restrictions without authorization."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-router-password-forgotten",
+      "title": "Forgot the Wi-Fi password",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["Wi-Fi password", "network key", "router password"],
+      "symptoms": ["A new device cannot join the network", "Saved password is unavailable"],
+      "diagnosis": {"question": "Do you own or administer this network, or have permission from its owner?", "answers": {"yes": "recover-authorized-password", "no": "ask-network-owner"}},
+      "steps": {
+        "recover-authorized-password": {"instruction": "Check the router label, saved passwords on your own devices, or the router's authorized administration interface.", "next": ""},
+        "ask-network-owner": {"instruction": "Ask the network owner or administrator to provide access.", "next": ""}
+      },
+      "solutions": ["Check the router label if the password was never changed.", "View saved network credentials on a device you own using its normal settings.", "Change the Wi-Fi password through the authorized router interface if necessary."],
+      "safety": ["Do not attempt to access a network without permission.", "Changing the password disconnects devices that use the old password."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "wifi-router-forgotten-admin-password",
+      "title": "Forgot the router administrator password",
+      "category": "networking",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["router admin password", "router login", "factory reset"],
+      "symptoms": ["Cannot sign in to router settings", "Default credentials do not work"],
+      "diagnosis": {"question": "Is this your router or do you have authorization to administer it?", "answers": {"yes": "check-password-records", "no": "contact-owner"}},
+      "steps": {
+        "check-password-records": {"instruction": "Check your password manager, setup records, or provider documentation.", "next": ""},
+        "contact-owner": {"instruction": "Ask the owner or network administrator to make the required change.", "next": ""}
+      },
+      "solutions": ["Use the provider's official account recovery procedure.", "Use the documented reset procedure only if you can restore the network configuration."],
+      "safety": ["A factory reset can erase internet, Wi-Fi, and provider settings.", "Do not reset equipment you do not administer."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-webpage-wont-load",
+      "title": "A website will not load in the browser",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["webpage error", "browser loading", "site unreachable"],
+      "symptoms": ["Page remains blank", "Browser reports a connection error"],
+      "diagnosis": {"question": "Does the website open in another browser or on another device?", "answers": {"yes": "check-original-browser", "no": "check-site-and-network"}},
+      "steps": {
+        "check-original-browser": {"instruction": "Check extensions, proxy settings, cached site data, and browser updates.", "next": ""},
+        "check-site-and-network": {"instruction": "Check internet connectivity, the exact URL, and whether the website is experiencing an outage.", "next": ""}
+      },
+      "solutions": ["Reload the page.", "Try a private window or another browser.", "Temporarily disable a suspected extension for testing.", "Clear site data only if you understand that you may be signed out."],
+      "safety": ["Do not ignore certificate or malware warnings just to load a page."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-too-many-popups",
+      "title": "Browser shows too many pop-ups",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["pop-up ads", "browser notifications", "adware"],
+      "symptoms": ["Unexpected tabs open", "Repeated advertising notifications appear"],
+      "diagnosis": {"question": "Do the notifications appear even when the website is closed?", "answers": {"yes": "review-site-notifications", "no": "check-browser-extensions"}},
+      "steps": {
+        "review-site-notifications": {"instruction": "Review browser site notification permissions and remove permission from sites you do not trust.", "next": ""},
+        "check-browser-extensions": {"instruction": "Review installed extensions and remove ones you do not recognize or need.", "next": ""}
+      },
+      "solutions": ["Block unwanted pop-ups in browser settings.", "Remove suspicious site notification permissions.", "Uninstall unfamiliar extensions.", "Run a scan using trusted security software if pop-ups persist."],
+      "safety": ["Do not click fake virus alerts or install software promoted by suspicious pop-ups."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-pages-load-slowly",
+      "title": "Browser pages load slowly",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["slow browser", "tabs slow", "browser performance"],
+      "symptoms": ["Pages take a long time to open", "Browser becomes sluggish"],
+      "diagnosis": {"question": "Are pages slow in every browser or only one browser?", "answers": {"yes": "check-network-device", "no": "check-browser-extensions"}},
+      "steps": {
+        "check-network-device": {"instruction": "Check network speed, system resource usage, and whether the sites themselves are slow.", "next": ""},
+        "check-browser-extensions": {"instruction": "Review extensions, open tabs, and browser resource usage.", "next": ""}
+      },
+      "solutions": ["Close unnecessary tabs.", "Update the browser.", "Disable unnecessary extensions one at a time for testing.", "Clear cached files if appropriate."],
+      "safety": ["Export or back up important browser data before resetting the browser profile."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-password-autofill-not-working",
+      "title": "Browser password autofill is not working",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["password manager", "autofill", "saved password"],
+      "symptoms": ["Saved credentials are not suggested", "Login form remains empty"],
+      "diagnosis": {"question": "Is the password saved in the browser or password manager you intend to use?", "answers": {"yes": "check-autofill-settings", "no": "check-password-vault"}},
+      "steps": {
+        "check-autofill-settings": {"instruction": "Check autofill settings, profile selection, and whether the site blocks or changes its login form.", "next": ""},
+        "check-password-vault": {"instruction": "Check the intended password manager and whether you are using the correct profile or vault.", "next": ""}
+      },
+      "solutions": ["Enable the appropriate autofill feature.", "Unlock the intended password manager.", "Check whether the site address matches the saved login.", "Update the browser or password manager."],
+      "safety": ["Never share saved passwords or master passwords with troubleshooting services."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-download-fails",
+      "title": "Browser download fails",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["download error", "download blocked", "file not saved"],
+      "symptoms": ["Download stops midway", "Browser reports a failed download"],
+      "diagnosis": {"question": "Is there enough free space on the download drive?", "answers": {"yes": "check-network-and-browser", "no": "free-download-space"}},
+      "steps": {
+        "check-network-and-browser": {"instruction": "Check connection stability, browser download settings, and whether the server is still available.", "next": ""},
+        "free-download-space": {"instruction": "Free disk space safely or choose a different trusted download location.", "next": ""}
+      },
+      "solutions": ["Retry from the official source.", "Check the selected download folder and permissions.", "Review security software alerts rather than bypassing them.", "Try another browser if the source is trusted."],
+      "safety": ["Do not bypass a malware warning for an unknown download."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-certificate-warning",
+      "title": "Browser displays a security certificate warning",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["certificate error", "privacy warning", "HTTPS"],
+      "symptoms": ["Browser warns that a connection is not private", "Certificate is invalid or expired"],
+      "diagnosis": {"question": "Is the computer or phone's date and time correct?", "answers": {"yes": "check-network-and-site", "no": "correct-device-time"}},
+      "steps": {
+        "check-network-and-site": {"instruction": "Check the exact domain, network sign-in requirements, and whether the website's certificate may have expired.", "next": ""},
+        "correct-device-time": {"instruction": "Correct the device date, time, and time zone, then retry.", "next": ""}
+      },
+      "solutions": ["Correct device time if wrong.", "Try a trusted network.", "Check the website's official status or contact its administrator.", "Wait for the site owner to fix a certificate problem."],
+      "safety": ["Do not proceed through certificate warnings on banking, email, shopping, or password sites."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-saved-bookmarks-missing",
+      "title": "Browser bookmarks appear to be missing",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["bookmarks missing", "favorites disappeared", "browser profile"],
+      "symptoms": ["Bookmark bar is empty", "Saved favorites are not visible"],
+      "diagnosis": {"question": "Are you using the same browser profile as before?", "answers": {"yes": "check-bookmark-location", "no": "switch-profile"}},
+      "steps": {
+        "check-bookmark-location": {"instruction": "Check other bookmark folders, the bookmark manager, and whether the bookmark bar is hidden.", "next": ""},
+        "switch-profile": {"instruction": "Open the correct existing browser profile and check whether synchronization is enabled.", "next": ""}
+      },
+      "solutions": ["Check the browser's bookmark manager.", "Restore from a verified bookmark export if needed.", "Check the correct profile and sync status.", "Export bookmarks once they are recovered."],
+      "safety": ["Do not reset or delete browser profiles before backing up available bookmark data."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-extensions-cause-problems",
+      "title": "A browser extension causes errors or broken pages",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["extension conflict", "add-on problem", "page broken"],
+      "symptoms": ["Pages break after installing an extension", "Browser behaves differently with extensions enabled"],
+      "diagnosis": {"question": "Did the issue start after installing or updating an extension?", "answers": {"yes": "disable-recent-extension", "no": "test-clean-profile"}},
+      "steps": {
+        "disable-recent-extension": {"instruction": "Disable the recently added or updated extension and reload the affected page.", "next": ""},
+        "test-clean-profile": {"instruction": "Test in a clean browser profile or private window where extensions are disabled by default, if supported.", "next": ""}
+      },
+      "solutions": ["Disable extensions one at a time to identify the cause.", "Update or remove the problematic extension.", "Check extension permissions and developer reputation."],
+      "safety": ["Avoid extensions that request broad access to all websites without a clear need."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-search-engine-changed",
+      "title": "Browser search engine changed unexpectedly",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["search engine hijack", "default search changed", "browser hijacker"],
+      "symptoms": ["Searches use an unfamiliar provider", "New tabs or home page changed"],
+      "diagnosis": {"question": "Did the change occur after installing an extension or application?", "answers": {"yes": "review-recent-installations", "no": "check-browser-settings"}},
+      "steps": {
+        "review-recent-installations": {"instruction": "Review recent extensions and applications and remove anything you do not recognize.", "next": ""},
+        "check-browser-settings": {"instruction": "Check default search engine, home page, startup pages, and managed-browser notices.", "next": ""}
+      },
+      "solutions": ["Restore the intended search engine in browser settings.", "Remove unwanted extensions.", "Run a trusted security scan if settings keep changing.", "Reset browser settings only after understanding what will be reset."],
+      "safety": ["Do not install a recommended cleanup tool from a suspicious pop-up."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-webcam-or-microphone-blocked",
+      "title": "Browser blocks camera or microphone access",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["browser permission", "camera blocked", "microphone blocked"],
+      "symptoms": ["Video call cannot use the camera", "Website cannot access the microphone"],
+      "diagnosis": {"question": "Has the browser been granted camera and microphone permission for this specific site?", "answers": {"yes": "check-system-permissions", "no": "grant-site-permission"}},
+      "steps": {
+        "check-system-permissions": {"instruction": "Check operating-system privacy settings, selected devices, and whether another app is using them.", "next": ""},
+        "grant-site-permission": {"instruction": "Open the browser's site information or permissions panel and allow only the required device access for the trusted site.", "next": ""}
+      },
+      "solutions": ["Select the correct camera and microphone.", "Allow access for the intended website.", "Reload the page after changing permission.", "Close other apps using the device."],
+      "safety": ["Grant camera and microphone access only to websites you trust."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-too-many-tabs-memory",
+      "title": "Browser uses too much memory with many tabs",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["browser RAM", "many tabs", "memory usage"],
+      "symptoms": ["Browser slows down with many tabs", "Computer memory usage is high"],
+      "diagnosis": {"question": "Does performance improve when you close or suspend unused tabs?", "answers": {"yes": "reduce-tab-load", "no": "check-extensions-and-device"}},
+      "steps": {
+        "reduce-tab-load": {"instruction": "Identify tabs and web apps using the most memory and close those that are no longer needed.", "next": ""},
+        "check-extensions-and-device": {"instruction": "Check extension usage and overall system memory pressure.", "next": ""}
+      },
+      "solutions": ["Close unused tabs.", "Use built-in tab sleeping or memory saver features if available.", "Remove unnecessary extensions.", "Restart the browser after saving work."],
+      "safety": ["Save unsent forms and documents before closing tabs."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-video-wont-play",
+      "title": "Video will not play in the browser",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["video playback", "streaming error", "black video"],
+      "symptoms": ["Video remains black", "Playback reports an error or spins indefinitely"],
+      "diagnosis": {"question": "Does the video play in another browser or on another device?", "answers": {"yes": "check-original-browser", "no": "check-service-and-network"}},
+      "steps": {
+        "check-original-browser": {"instruction": "Check browser updates, extensions, site permissions, and hardware acceleration settings.", "next": ""},
+        "check-service-and-network": {"instruction": "Check internet stability, the streaming service status, and whether the content is available in your region or account.", "next": ""}
+      },
+      "solutions": ["Update the browser.", "Disable a suspected content-blocking extension for testing.", "Check the service account and subscription if required.", "Restart the browser."],
+      "safety": ["Do not install unofficial codecs or video players from suspicious websites."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-downloads-folder-unknown",
+      "title": "Cannot find a downloaded file",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["downloaded file missing", "download location", "browser downloads"],
+      "symptoms": ["Download appears complete but file cannot be found", "File is not in the expected folder"],
+      "diagnosis": {"question": "Does the browser's download history show the completed file?", "answers": {"yes": "open-download-location", "no": "check-download-status"}},
+      "steps": {
+        "open-download-location": {"instruction": "Use the browser's show-in-folder or open-containing-folder action if available.", "next": ""},
+        "check-download-status": {"instruction": "Check whether the download failed, was blocked, or was saved to a different location.", "next": ""}
+      },
+      "solutions": ["Check the browser's configured download folder.", "Search by filename in File Explorer.", "Check whether security software quarantined the file.", "Download again only from the trusted original source."],
+      "safety": ["Do not restore quarantined files unless you have verified they are safe."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-website-keeps-logging-out",
+      "title": "A website keeps logging you out",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["session expires", "cookies", "sign-in loop"],
+      "symptoms": ["Login does not persist", "Website repeatedly asks for sign-in"],
+      "diagnosis": {"question": "Does the browser delete cookies or site data when it closes?", "answers": {"yes": "review-cookie-settings", "no": "check-site-session"}},
+      "steps": {
+        "review-cookie-settings": {"instruction": "Check cookie settings, private browsing mode, and automatic data-clearing tools.", "next": ""},
+        "check-site-session": {"instruction": "Check whether the service has session restrictions or an account security alert.", "next": ""}
+      },
+      "solutions": ["Allow necessary cookies for the trusted site.", "Avoid private browsing if you need a persistent session.", "Check device date and time.", "Contact the website if sessions expire unexpectedly."],
+      "safety": ["Do not weaken cookie protections globally just to fix one site."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "browser-website-language-wrong",
+      "title": "Website displays the wrong language",
+      "category": "browsers",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["website language", "locale", "translation"],
+      "symptoms": ["Website opens in an unexpected language", "Content is automatically translated"],
+      "diagnosis": {"question": "Is the browser translating the page automatically?", "answers": {"yes": "check-translation-settings", "no": "check-site-language"}},
+      "steps": {
+        "check-translation-settings": {"instruction": "Review browser translation settings and turn off translation for this site if appropriate.", "next": ""},
+        "check-site-language": {"instruction": "Check the website's language selector and browser preferred-language settings.", "next": ""}
+      },
+      "solutions": ["Choose the desired language on the website.", "Adjust browser language preferences.", "Review automatic translation settings."],
+      "safety": ["When translating legal, medical, or financial information, verify important details in an authoritative language version."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "email-not-sending",
+      "title": "Email messages will not send",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["email outbox", "SMTP", "mail sending error"],
+      "symptoms": ["Messages remain in Outbox", "Sending fails with an error"],
+      "diagnosis": {"question": "Can you receive new email messages in the same account?", "answers": {"yes": "check-outgoing-settings", "no": "check-account-and-network"}},
+      "steps": {
+        "check-outgoing-settings": {"instruction": "Check the outgoing server settings, attachment size, and any service error message.", "next": ""},
+        "check-account-and-network": {"instruction": "Check internet access, account sign-in status, and the provider's service status.", "next": ""}
+      },
+      "solutions": ["Check the recipient address.", "Remove or reduce an attachment that exceeds the provider's limit.", "Reauthenticate the account if requested through the official app.", "Check the provider's sending limits and service status."],
+      "safety": ["Do not email passwords, verification codes, or sensitive information without appropriate protection."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "email-not-receiving",
+      "title": "Email messages are not arriving",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["email missing", "inbox not updating", "spam folder"],
+      "symptoms": ["Expected email is missing", "New mail does not appear"],
+      "diagnosis": {"question": "Have you checked Spam, Junk, and other inbox categories?", "answers": {"yes": "check-filters-and-storage", "no": "check-other-folders"}},
+      "steps": {
+        "check-filters-and-storage": {"instruction": "Review filters, blocked senders, mailbox storage limits, and account sync status.", "next": ""},
+        "check-other-folders": {"instruction": "Check Spam, Junk, Archive, Promotions, and any other inbox categories.", "next": ""}
+      },
+      "solutions": ["Check filters and blocked addresses.", "Confirm the sender used the correct address.", "Check mailbox storage and provider status.", "Refresh or reauthenticate the mail app if appropriate."],
+      "safety": ["Do not mark suspicious messages as safe without checking their origin."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "video-call-microphone-not-working",
+      "title": "Microphone does not work in a video-call app",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["meeting microphone", "mute", "input device"],
+      "symptoms": ["Other participants cannot hear you", "Microphone meter does not move"],
+      "diagnosis": {"question": "Is the microphone muted in the meeting controls?", "answers": {"yes": "unmute-microphone", "no": "check-selected-input"}},
+      "steps": {
+        "unmute-microphone": {"instruction": "Unmute yourself if you intend to speak and have permission to do so.", "next": ""},
+        "check-selected-input": {"instruction": "Select the intended microphone and check operating-system permissions.", "next": ""}
+      },
+      "solutions": ["Check the app's selected input device.", "Allow microphone access.", "Close other apps using the microphone.", "Leave and rejoin the meeting if the app becomes stuck."],
+      "safety": ["Mute the microphone when you do not want others to hear nearby conversations."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "video-call-camera-not-working",
+      "title": "Camera does not work in a video-call app",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["meeting camera", "webcam permission", "black video"],
+      "symptoms": ["Participants cannot see you", "Camera preview is black"],
+      "diagnosis": {"question": "Does the camera work in the operating system's camera app?", "answers": {"yes": "check-meeting-camera", "no": "fix-camera-first"}},
+      "steps": {
+        "check-meeting-camera": {"instruction": "Select the correct camera in the meeting app and check its permission.", "next": ""},
+        "fix-camera-first": {"instruction": "Check camera privacy controls, physical shutter, and device status before troubleshooting the meeting app.", "next": ""}
+      },
+      "solutions": ["Close other apps using the camera.", "Allow camera access for the meeting app.", "Check the selected camera and physical shutter.", "Update the app and device drivers through trusted sources."],
+      "safety": ["Grant camera access only to trusted applications and websites."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "pdf-file-wont-open",
+      "title": "PDF file will not open",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["PDF error", "document reader", "corrupt PDF"],
+      "symptoms": ["PDF reader reports an error", "File appears blank or incomplete"],
+      "diagnosis": {"question": "Does the PDF open in another trusted PDF reader or browser?", "answers": {"yes": "check-original-reader", "no": "check-file-integrity"}},
+      "steps": {
+        "check-original-reader": {"instruction": "Update the original reader and check whether its settings or extensions affect PDF handling.", "next": ""},
+        "check-file-integrity": {"instruction": "Check file size and obtain a fresh copy from the original trusted source if possible.", "next": ""}
+      },
+      "solutions": ["Try a trusted PDF reader.", "Download the file again from its source.", "Check whether the document requires a password.", "Update the PDF reader."],
+      "safety": ["Do not enable active content or follow unexpected links inside an untrusted PDF."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "file-wont-open-unknown-format",
+      "title": "A file will not open because its format is unknown",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["unknown file extension", "file association", "unsupported format"],
+      "symptoms": ["No application is associated with the file", "App reports unsupported format"],
+      "diagnosis": {"question": "Do you know which application created the file and trust its source?", "answers": {"yes": "identify-required-app", "no": "verify-file-source"}},
+      "steps": {
+        "identify-required-app": {"instruction": "Check the file extension and the creator's recommended application.", "next": ""},
+        "verify-file-source": {"instruction": "Verify who sent the file and why it was expected before opening it.", "next": ""}
+      },
+      "solutions": ["Install a suitable application from its official source.", "Ask the sender to confirm the file format.", "Check whether the file is incomplete or renamed incorrectly."],
+      "safety": ["Do not execute unknown files or enable macros in unexpected documents."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "usb-device-disconnects-repeatedly",
+      "title": "USB device disconnects repeatedly",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["USB disconnect", "loose cable", "external device"],
+      "symptoms": ["Device repeatedly disappears and returns", "Transfer stops unexpectedly"],
+      "diagnosis": {"question": "Does the issue stop when you use a different known-good cable or port?", "answers": {"yes": "replace-cable-or-port", "no": "check-device-power"}},
+      "steps": {
+        "replace-cable-or-port": {"instruction": "Inspect the original cable and port for damage or looseness.", "next": ""},
+        "check-device-power": {"instruction": "Check whether the device requires external power or a powered hub.", "next": ""}
+      },
+      "solutions": ["Use a compatible known-good cable.", "Try a different port.", "Avoid unpowered hubs for devices that need more power.", "Update appropriate drivers if the problem persists."],
+      "safety": ["Disconnect a device immediately if it becomes hot, smells burnt, or shows electrical damage."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "external-hard-drive-making-clicking-noise",
+      "title": "External hard drive makes unusual clicking noises",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["hard drive clicking", "drive failure", "data recovery"],
+      "symptoms": ["Drive makes repeated unusual clicking sounds", "Drive disconnects or files become inaccessible"],
+      "diagnosis": {"question": "Does the drive contain important data that is not backed up?", "answers": {"yes": "protect-important-data", "no": "check-manufacturer-guidance"}},
+      "steps": {
+        "protect-important-data": {"instruction": "Stop unnecessary use and consider professional data recovery before further attempts.", "next": ""},
+        "check-manufacturer-guidance": {"instruction": "Check the drive manufacturer's diagnostic guidance and warranty support.", "next": ""}
+      },
+      "solutions": ["Disconnect the drive safely if possible.", "Avoid repeated power cycling and repair attempts.", "Use a professional recovery service for irreplaceable data."],
+      "safety": ["Do not open the drive enclosure or run destructive repair tools on a failing drive containing needed data."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "printer-paper-jam",
+      "title": "Printer reports a paper jam",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["paper jam", "printer stuck", "paper feed"],
+      "symptoms": ["Printer stops and displays a jam warning", "Paper is partly fed"],
+      "diagnosis": {"question": "Can you see paper stuck in an area that the printer manual identifies as user-accessible?", "answers": {"yes": "clear-accessible-jam", "no": "check-manual-and-feed"}},
+      "steps": {
+        "clear-accessible-jam": {"instruction": "Follow the printer manual to remove accessible paper gently in the recommended direction.", "next": ""},
+        "check-manual-and-feed": {"instruction": "Check the manual's jam locations and paper-loading guidance.", "next": ""}
+      },
+      "solutions": ["Remove paper according to the manual.", "Use correctly sized, undamaged paper.", "Adjust paper guides.", "Check for small torn pieces only in user-accessible areas."],
+      "safety": ["Turn off and unplug the printer when the manual requires it.", "Avoid hot fuser components and do not force internal parts."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "printer-prints-blank-pages",
+      "title": "Printer produces blank pages",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["blank print", "empty pages", "ink toner"],
+      "symptoms": ["Paper comes out blank", "Print preview contains content but output does not"],
+      "diagnosis": {"question": "Does the printer's own test page also come out blank?", "answers": {"yes": "check-ink-toner", "no": "check-document-and-driver"}},
+      "steps": {
+        "check-ink-toner": {"instruction": "Check ink or toner status and follow the manufacturer's maintenance procedure.", "next": ""},
+        "check-document-and-driver": {"instruction": "Check the document, print preview, selected pages, and printer driver settings.", "next": ""}
+      },
+      "solutions": ["Check ink or toner levels.", "Run the recommended printhead or nozzle check if applicable.", "Verify the document contains visible content.", "Update the official printer driver if needed."],
+      "safety": ["Handle toner and ink according to manufacturer instructions; do not inhale toner dust."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "printer-colours-look-wrong",
+      "title": "Printer colours look wrong",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["wrong print colours", "colour calibration", "printer ink"],
+      "symptoms": ["Prints have a colour cast", "Some colours are missing"],
+      "diagnosis": {"question": "Does the printer's test page also show incorrect or missing colours?", "answers": {"yes": "check-consumables-and-head", "no": "check-document-colour-settings"}},
+      "steps": {
+        "check-consumables-and-head": {"instruction": "Check consumables and run the manufacturer's recommended print quality test.", "next": ""},
+        "check-document-colour-settings": {"instruction": "Check document colour settings, selected paper type, and colour management options.", "next": ""}
+      },
+      "solutions": ["Check ink or toner levels.", "Run the appropriate maintenance utility.", "Select the correct paper type and colour mode.", "Use a suitable colour profile when required."],
+      "safety": ["Avoid excessive printhead cleaning cycles because they can consume ink."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "television-no-picture",
+      "title": "Television has sound but no picture",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["TV black screen", "sound no picture", "display problem"],
+      "symptoms": ["Audio is audible but screen appears black", "Picture disappears unexpectedly"],
+      "diagnosis": {"question": "Does the TV menu appear when you press the remote's menu button?", "answers": {"yes": "check-input-source", "no": "check-safe-power-reset"}},
+      "steps": {
+        "check-input-source": {"instruction": "Check the selected input, connected device, cable, and source output.", "next": ""},
+        "check-safe-power-reset": {"instruction": "Follow the TV manufacturer's safe restart guidance and check for a standby indicator.", "next": ""}
+      },
+      "solutions": ["Select the correct input.", "Check the external device and HDMI cable.", "Restart the TV according to the manual.", "Seek qualified service if the menu itself never appears."],
+      "safety": ["Do not open the television; internal components may retain dangerous voltages."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "television-no-sound",
+      "title": "Television has no sound",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["TV mute", "no television audio", "sound output"],
+      "symptoms": ["Picture works but no sound is heard", "Audio output device is silent"],
+      "diagnosis": {"question": "Is the TV sound routed to an external soundbar or Bluetooth device?", "answers": {"yes": "check-external-audio", "no": "check-tv-audio-settings"}},
+      "steps": {
+        "check-external-audio": {"instruction": "Check the external device's power, selected input, and connection.", "next": ""},
+        "check-tv-audio-settings": {"instruction": "Check mute, volume, audio output settings, and whether other TV sources have sound.", "next": ""}
+      },
+      "solutions": ["Unmute the TV.", "Select the intended audio output.", "Check HDMI or optical connections.", "Restart the TV and external audio device if appropriate."],
+      "safety": ["Do not open the television or soundbar to inspect internal electrical parts."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "television-no-signal",
+      "title": "Television displays no signal",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["TV no signal", "HDMI", "set-top box"],
+      "symptoms": ["TV shows a no-signal message", "External device picture is missing"],
+      "diagnosis": {"question": "Is the correct HDMI or TV input selected?", "answers": {"yes": "check-source-device", "no": "select-correct-input"}},
+      "steps": {
+        "check-source-device": {"instruction": "Check that the set-top box, console, or other source device is powered on and outputting a signal.", "next": ""},
+        "select-correct-input": {"instruction": "Select the HDMI port or broadcast input used by the connected device.", "next": ""}
+      },
+      "solutions": ["Check the selected input.", "Reconnect the HDMI cable with devices safely powered down if the manual recommends it.", "Try a known-good compatible cable or input.", "Check the source device and service status."],
+      "safety": ["Do not force connectors or open electronic equipment."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "television-remote-not-working",
+      "title": "Television remote control is not working",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["TV remote", "remote batteries", "infrared"],
+      "symptoms": ["Buttons do not control the TV", "Remote works only intermittently"],
+      "diagnosis": {"question": "Does the TV respond to its physical buttons or a manufacturer-approved phone app?", "answers": {"yes": "check-remote", "no": "check-tv-power"}},
+      "steps": {
+        "check-remote": {"instruction": "Check remote batteries, battery orientation, pairing, and whether the remote is blocked or damaged.", "next": ""},
+        "check-tv-power": {"instruction": "Check the TV's power indicator and safe external power connections.", "next": ""}
+      },
+      "solutions": ["Replace weak batteries with the correct type.", "Re-pair the remote if required.", "Clean the outside of the remote and inspect for stuck buttons.", "Use the manual's reset procedure if applicable."],
+      "safety": ["Keep button batteries away from children and dispose of them safely."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "television-apps-not-opening",
+      "title": "Smart TV apps will not open",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["Smart TV app crash", "streaming app", "TV internet"],
+      "symptoms": ["App closes immediately", "App remains stuck on its loading screen"],
+      "diagnosis": {"question": "Can the TV access other internet-connected apps or services?", "answers": {"yes": "check-one-app", "no": "check-tv-network"}},
+      "steps": {
+        "check-one-app": {"instruction": "Check the affected app's service status, updates, and account sign-in.", "next": ""},
+        "check-tv-network": {"instruction": "Check the TV's network connection and whether other devices can access the internet.", "next": ""}
+      },
+      "solutions": ["Restart the app and TV.", "Update the app and TV software through official settings.", "Check available TV storage if supported.", "Reinstall the app only if account details and settings are known."],
+      "safety": ["A factory reset can remove accounts and settings; use it only after other steps and after checking the manual."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "bluetooth-headphones-no-sound",
+      "title": "Bluetooth headphones connect but produce no sound",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["Bluetooth audio", "headphones silent", "audio output"],
+      "symptoms": ["Headphones show connected but audio comes from speakers", "Headphones are silent"],
+      "diagnosis": {"question": "Are the headphones selected as the active audio output?", "answers": {"yes": "check-headphone-volume", "no": "select-headphones"}},
+      "steps": {
+        "check-headphone-volume": {"instruction": "Check headphone volume, mute status, battery, and whether the correct audio profile is active.", "next": ""},
+        "select-headphones": {"instruction": "Choose the headphones as the audio output in the device's sound settings.", "next": ""}
+      },
+      "solutions": ["Select the headphones as the output device.", "Raise volume on both devices.", "Disconnect and reconnect the headphones.", "Remove and recreate the pairing if necessary."],
+      "safety": ["Keep listening volume at a safe level."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "bluetooth-headphones-audio-cutting-out",
+      "title": "Bluetooth headphone audio keeps cutting out",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["Bluetooth stutter", "audio dropouts", "wireless interference"],
+      "symptoms": ["Sound drops briefly", "Audio stutters during playback"],
+      "diagnosis": {"question": "Does the problem improve when the headphones are close to the connected device?", "answers": {"yes": "check-distance-interference", "no": "check-battery-and-pairing"}},
+      "steps": {
+        "check-distance-interference": {"instruction": "Reduce distance and obstacles, and test away from sources of wireless interference.", "next": ""},
+        "check-battery-and-pairing": {"instruction": "Charge the headphones and check whether the issue occurs with another compatible device.", "next": ""}
+      },
+      "solutions": ["Keep devices within the recommended range.", "Charge the headphones.", "Disconnect unused Bluetooth devices.", "Update firmware through the manufacturer's official app if available."],
+      "safety": ["Do not use damaged batteries or unofficial firmware tools."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "bluetooth-speaker-wont-pair",
+      "title": "Bluetooth speaker will not pair",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["speaker pairing", "Bluetooth speaker", "pairing mode"],
+      "symptoms": ["Speaker is not visible in Bluetooth settings", "Pairing fails"],
+      "diagnosis": {"question": "Is the speaker charged and in pairing mode?", "answers": {"yes": "check-existing-connections", "no": "enable-speaker-pairing"}},
+      "steps": {
+        "check-existing-connections": {"instruction": "Check whether the speaker is already connected to another device and whether its pairing list is full.", "next": ""},
+        "enable-speaker-pairing": {"instruction": "Charge the speaker and follow the manufacturer's pairing instructions.", "next": ""}
+      },
+      "solutions": ["Move the devices close together.", "Disconnect the speaker from other devices.", "Remove stale pairings and retry.", "Use the documented reset procedure if needed."],
+      "safety": ["Do not reset the speaker unless you understand what settings will be erased."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "hdmi-device-no-picture",
+      "title": "HDMI-connected device has no picture",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["HDMI no display", "monitor no signal", "console display"],
+      "symptoms": ["Display shows no signal", "HDMI source appears black"],
+      "diagnosis": {"question": "Is the display set to the HDMI input used by the source device?", "answers": {"yes": "check-source-and-cable", "no": "select-hdmi-input"}},
+      "steps": {
+        "check-source-and-cable": {"instruction": "Check source power, HDMI cable seating, and whether another compatible cable or port works.", "next": ""},
+        "select-hdmi-input": {"instruction": "Select the correct HDMI input on the TV or monitor.", "next": ""}
+      },
+      "solutions": ["Select the correct input.", "Reconnect the cable safely.", "Restart the source device and display.", "Check resolution compatibility and device documentation."],
+      "safety": ["Do not force HDMI connectors or open the display."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "monitor-flickering",
+      "title": "Computer monitor flickers",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["screen flicker", "display cable", "refresh rate"],
+      "symptoms": ["Image flashes or flickers", "Display intermittently goes black"],
+      "diagnosis": {"question": "Does the flicker occur with another compatible cable or device?", "answers": {"yes": "check-monitor-settings", "no": "check-original-connection"}},
+      "steps": {
+        "check-monitor-settings": {"instruction": "Check the monitor's supported resolution and refresh rate, and install appropriate graphics updates.", "next": ""},
+        "check-original-connection": {"instruction": "Check the cable, connector seating, and original computer's graphics settings.", "next": ""}
+      },
+      "solutions": ["Reseat or replace a suspect compatible cable.", "Use a supported refresh rate.", "Update graphics drivers from the device manufacturer.", "Test the monitor with another compatible source."],
+      "safety": ["Do not open the monitor; internal components may retain dangerous voltages."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "phone-charger-cable-overheating",
+      "title": "Phone charger or cable becomes unusually hot",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["charger hot", "cable overheating", "charging safety"],
+      "symptoms": ["Charger is excessively hot", "Cable or connector smells unusual or changes colour"],
+      "diagnosis": {"question": "Is the charger, cable, or connector damaged, discoloured, smoking, or too hot to handle comfortably?", "answers": {"yes": "stop-using-charger", "no": "check-normal-heat"}},
+      "steps": {
+        "stop-using-charger": {"instruction": "Stop charging and disconnect power only if it is safe to do so; replace the damaged equipment with a compatible reputable product.", "next": ""},
+        "check-normal-heat": {"instruction": "Check the manufacturer's guidance on normal operating temperature and ensure the charger has ventilation.", "next": ""}
+      },
+      "solutions": ["Use a compatible charger from a reputable source.", "Keep the charger uncovered and ventilated.", "Replace damaged cables and adapters.", "Seek service if unusual heating persists."],
+      "safety": ["Stop using equipment that smokes, sparks, smells burnt, or has damaged insulation.", "Never open a mains-powered charger."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "washing-machine-wont-start",
+      "title": "Washing machine will not start",
+      "category": "appliances",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["washer not starting", "door lock", "washing machine power"],
+      "symptoms": ["Machine does not respond", "Cycle will not begin"],
+      "diagnosis": {"question": "Is the display or any indicator light on?", "answers": {"yes": "check-cycle-and-door", "no": "check-power-safely"}},
+      "steps": {
+        "check-cycle-and-door": {"instruction": "Check that the door or lid is fully closed and a valid cycle has been selected.", "next": ""},
+        "check-power-safely": {"instruction": "Check the wall switch and visible power connection without opening electrical parts.", "next": ""}
+      },
+      "solutions": ["Check child lock and delay-start settings.", "Ensure the door or lid is closed correctly.", "Follow the manual's safe reset procedure.", "Contact qualified service if power is present but the machine remains unresponsive."],
+      "safety": ["Do not bypass the door lock or open electrical panels.", "Do not touch plugs or switches with wet hands."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "washing-machine-not-draining",
+      "title": "Washing machine will not drain water",
+      "category": "appliances",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["washer water remaining", "drain pump", "drain hose"],
+      "symptoms": ["Water remains in the drum", "Cycle stops before spinning"],
+      "diagnosis": {"question": "Does the machine display a drain error code?", "answers": {"yes": "check-manual-error-code", "no": "check-drain-hose"}},
+      "steps": {
+        "check-manual-error-code": {"instruction": "Look up the exact code in the manufacturer's manual.", "next": ""},
+        "check-drain-hose": {"instruction": "Inspect the externally visible drain hose for kinks or obvious blockage without moving a heavy machine unsafely.", "next": ""}
+      },
+      "solutions": ["Check the drain hose position and visible kinks.", "Use the manual's procedure for accessible filter cleaning if provided.", "Arrange service if the pump or internal drain path may be blocked."],
+      "safety": ["Disconnect power before user-maintenance steps when the manual requires it.", "Water may be hot; prepare for spills and never force open a locked door."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "washing-machine-vibrating-excessively",
+      "title": "Washing machine vibrates excessively",
+      "category": "appliances",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["washer shaking", "unbalanced load", "spin cycle noise"],
+      "symptoms": ["Machine moves during spinning", "Loud vibration occurs"],
+      "diagnosis": {"question": "Does the vibration happen mainly during the spin cycle or with one heavy item?", "answers": {"yes": "rebalance-load", "no": "check-machine-level"}},
+      "steps": {
+        "rebalance-load": {"instruction": "Pause the cycle if safe and redistribute the load according to the manual.", "next": ""},
+        "check-machine-level": {"instruction": "Check whether the machine is level and all feet are stable, following the installation instructions.", "next": ""}
+      },
+      "solutions": ["Redistribute the laundry.", "Avoid overloading or washing one bulky item alone if the manual advises against it.", "Check the machine's level and installation.", "Arrange service if severe vibration persists."],
+      "safety": ["Do not reach into a moving drum or attempt to hold a vibrating machine in place."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "refrigerator-not-cooling",
+      "title": "Refrigerator is not cooling properly",
+      "category": "appliances",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["fridge warm", "refrigerator temperature", "food spoilage"],
+      "symptoms": ["Food compartment feels warm", "Food is spoiling sooner than expected"],
+      "diagnosis": {"question": "Is the refrigerator receiving power and are the doors closing fully?", "answers": {"yes": "check-settings-airflow", "no": "check-power-door"}},
+      "steps": {
+        "check-settings-airflow": {"instruction": "Check temperature settings, blocked air vents, door seals, and whether the unit has enough ventilation.", "next": ""},
+        "check-power-door": {"instruction": "Check visible power status and ensure the doors are not obstructed.", "next": ""}
+      },
+      "solutions": ["Set temperatures according to the manufacturer's guidance.", "Keep internal vents clear.", "Check door seals and avoid prolonged door opening.", "Contact service if cooling does not recover."],
+      "safety": ["Keep perishable food at safe temperatures and discard food that may have been held unsafely.", "Do not open sealed refrigeration systems or handle refrigerants."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "refrigerator-making-unusual-noise",
+      "title": "Refrigerator makes an unusual noise",
+      "category": "appliances",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["fridge noise", "buzzing", "rattling", "clicking"],
+      "symptoms": ["New rattling or buzzing occurs", "Noise changes during cooling"],
+      "diagnosis": {"question": "Is the noise accompanied by burning smell, smoke, or loss of cooling?", "answers": {"yes": "stop-and-seek-service", "no": "check-placement"}},
+      "steps": {
+        "stop-and-seek-service": {"instruction": "Stop using the appliance if there are electrical danger signs and seek qualified service.", "next": ""},
+        "check-placement": {"instruction": "Check whether the refrigerator is stable and external items are rattling against it.", "next": ""}
+      },
+      "solutions": ["Remove objects resting on the refrigerator.", "Check level and clearance according to the manual.", "Allow normal compressor and fan sounds to be distinguished from new unusual noises.", "Seek service if the noise persists or cooling changes."],
+      "safety": ["Do not remove internal panels or touch exposed electrical parts."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "air-conditioner-not-cooling",
+      "title": "Air conditioner is running but not cooling",
+      "category": "appliances",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["AC not cooling", "air conditioner warm air", "cooling problem"],
+      "symptoms": ["Room remains warm", "Airflow is present but not cool"],
+      "diagnosis": {"question": "Is the AC set to cooling mode at a suitable temperature?", "answers": {"yes": "check-airflow-filter", "no": "select-cooling-mode"}},
+      "steps": {
+        "check-airflow-filter": {"instruction": "Check accessible air filters, blocked vents, and whether the outdoor unit has unobstructed airflow.", "next": ""},
+        "select-cooling-mode": {"instruction": "Select the manufacturer's cooling mode and a suitable target temperature.", "next": ""}
+      },
+      "solutions": ["Clean user-accessible filters according to the manual.", "Keep supply and return vents unobstructed.", "Close windows and doors while cooling.", "Contact qualified HVAC service if cooling remains poor."],
+      "safety": ["Do not open electrical compartments or handle refrigerants.", "Turn off the unit if there is a burning smell or electrical hazard."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "air-conditioner-water-leaking",
+      "title": "Air conditioner is leaking water indoors",
+      "category": "appliances",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["AC water leak", "condensate drain", "indoor unit dripping"],
+      "symptoms": ["Water drips from indoor unit", "Wall or floor near AC becomes wet"],
+      "diagnosis": {"question": "Is water near electrical outlets, wiring, or the appliance's electrical components?", "answers": {"yes": "stop-unit-safely", "no": "check-visible-drain-and-filter"}},
+      "steps": {
+        "stop-unit-safely": {"instruction": "Stop using the unit if safe and keep people away from wet electrical areas; arrange qualified service.", "next": ""},
+        "check-visible-drain-and-filter": {"instruction": "Check accessible filters and visible drain hose routing only as described in the manual.", "next": ""}
+      },
+      "solutions": ["Turn off the AC if leaking continues.", "Clean accessible filters according to the manual.", "Arrange service to inspect the condensate drain and installation."],
+      "safety": ["Do not touch wet electrical equipment or open the AC electrical compartment."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "microwave-not-heating",
+      "title": "Microwave runs but does not heat food",
+      "category": "appliances",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["microwave no heat", "food stays cold", "microwave malfunction"],
+      "symptoms": ["Turntable or light works but food remains cold", "Heating is much weaker than usual"],
+      "diagnosis": {"question": "Is the microwave door closing correctly and is a suitable cooking time and power level selected?", "answers": {"yes": "stop-and-service", "no": "check-door-and-settings"}},
+      "steps": {
+        "stop-and-service": {"instruction": "Stop using the microwave and arrange qualified service if it runs without heating.", "next": ""},
+        "check-door-and-settings": {"instruction": "Check the selected mode, power level, timer, and visible door closure without forcing the door.", "next": ""}
+      },
+      "solutions": ["Confirm the correct cooking mode and power level.", "Use microwave-safe cookware and follow the manual.", "Arrange qualified repair if heating remains absent."],
+      "safety": ["Never remove the microwave casing; dangerous high voltage can remain even when unplugged.", "Do not operate a microwave with a damaged door or seal."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "electric-kettle-not-heating",
+      "title": "Electric kettle will not heat water",
+      "category": "appliances",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["kettle not boiling", "electric kettle", "power base"],
+      "symptoms": ["Kettle does not switch on", "Water remains cold"],
+      "diagnosis": {"question": "Is the kettle correctly seated on its base and is the power indicator on?", "answers": {"yes": "check-water-and-auto-shutoff", "no": "check-safe-power-connection"}},
+      "steps": {
+        "check-water-and-auto-shutoff": {"instruction": "Check water level and whether the kettle's overheat protection may have activated, following the manual.", "next": ""},
+        "check-safe-power-connection": {"instruction": "Check the external plug and outlet visually; do not touch them if wet or damaged.", "next": ""}
+      },
+      "solutions": ["Fill within the marked minimum and maximum levels.", "Allow the kettle to cool if its safety cutout activated.", "Clean scale according to the manual.", "Replace or service a faulty kettle."],
+      "safety": ["Do not operate an empty kettle.", "Stop using it if the cord, plug, or base is damaged or smells burnt."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "ceiling-fan-not-starting",
+      "title": "Ceiling fan will not start",
+      "category": "appliances",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["fan not spinning", "fan hums", "fan power"],
+      "symptoms": ["Fan does not rotate", "Fan hums but blades do not move"],
+      "diagnosis": {"question": "Is there a burning smell, unusual heat, sparking, or a buzzing electrical sound?", "answers": {"yes": "switch-off-and-call-electrician", "no": "check-control-and-power"}},
+      "steps": {
+        "switch-off-and-call-electrician": {"instruction": "Turn off the fan at the safe control point if possible and arrange qualified electrical service.", "next": ""},
+        "check-control-and-power": {"instruction": "Check the normal wall control, remote batteries, and circuit status without opening electrical fittings.", "next": ""}
+      },
+      "solutions": ["Check the normal wall switch and remote settings.", "Replace remote batteries if applicable.", "Arrange qualified service if the fan still does not start."],
+      "safety": ["Never push the blades while power is connected.", "Do not open the ceiling fan or electrical wiring; use a qualified electrician."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "water-purifier-flow-slow",
+      "title": "Water purifier dispenses water very slowly",
+      "category": "appliances",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["RO slow flow", "water purifier low output", "filter maintenance"],
+      "symptoms": ["Water output is weaker than usual", "Storage tank takes longer to fill"],
+      "diagnosis": {"question": "Is the incoming water supply normal and is the purifier showing a service or filter warning?", "answers": {"yes": "check-filter-maintenance", "no": "check-inlet-supply"}},
+      "steps": {
+        "check-filter-maintenance": {"instruction": "Check the purifier's maintenance indicator and filter replacement schedule.", "next": ""},
+        "check-inlet-supply": {"instruction": "Check the external water supply valve and visible inlet hose according to the installation manual.", "next": ""}
+      },
+      "solutions": ["Check the water supply and user-accessible valve positions.", "Replace filters only according to the manufacturer's schedule and procedure.", "Arrange service if flow remains low."],
+      "safety": ["Do not drink water if the purifier reports a safety fault or water quality is uncertain.", "Do not open pressurized components unless the manual identifies them as user-serviceable."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "induction-cooktop-not-heating",
+      "title": "Induction cooktop does not heat the pan",
+      "category": "appliances",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["induction stove", "pan not detected", "cooktop error"],
+      "symptoms": ["Cooktop switches on but does not heat", "Pan detection error appears"],
+      "diagnosis": {"question": "Is the pan suitable for induction cooking and centred on the cooking zone?", "answers": {"yes": "check-power-and-error", "no": "use-compatible-pan"}},
+      "steps": {
+        "check-power-and-error": {"instruction": "Check the cooktop display for an error code and consult the manufacturer's manual.", "next": ""},
+        "use-compatible-pan": {"instruction": "Use a flat-bottomed, induction-compatible pan of the size recommended by the manual.", "next": ""}
+      },
+      "solutions": ["Use compatible cookware.", "Centre the pan on the cooking zone.", "Check child lock and power settings.", "Arrange service if the cooktop reports a persistent fault."],
+      "safety": ["Do not use a cooktop with a cracked surface.", "Keep liquids away from electrical controls and follow the manual."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "gas-stove-burner-wont-light",
+      "title": "Gas stove burner will not light",
+      "category": "appliances",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["gas burner", "ignition failure", "stove not lighting"],
+      "symptoms": ["Burner clicks but does not ignite", "Burner does not light normally"],
+      "diagnosis": {"question": "Can you smell gas when the burner fails to light?", "answers": {"yes": "stop-and-follow-gas-safety", "no": "check-user-cleaning-guidance"}},
+      "steps": {
+        "stop-and-follow-gas-safety": {"instruction": "Stop using the stove, avoid flames and electrical switches, leave the area if gas smell persists, and contact the gas supplier or emergency service from a safe location.", "next": ""},
+        "check-user-cleaning-guidance": {"instruction": "Only after the stove is cool and gas is off as directed by the manual, check whether removable burner parts are correctly seated and dry.", "next": ""}
+      },
+      "solutions": ["Follow the stove manufacturer's user-maintenance instructions.", "Ensure removable burner parts are dry and correctly seated.", "Arrange qualified service if ignition remains unreliable."],
+      "safety": ["If you smell gas, do not keep trying to ignite the burner.", "Do not disassemble gas valves or repair gas lines yourself."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "doorbell-not-ringing",
+      "title": "Doorbell does not ring",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["doorbell silent", "wireless doorbell", "door chime"],
+      "symptoms": ["Pressing the button produces no sound", "Wireless doorbell does not respond"],
+      "diagnosis": {"question": "Is it a battery-powered wireless doorbell or a wired doorbell?", "answers": {"yes": "check-wireless-battery", "no": "check-wired-indicators"}},
+      "steps": {
+        "check-wireless-battery": {"instruction": "Check the button and receiver batteries and pairing instructions.", "next": ""},
+        "check-wired-indicators": {"instruction": "Check the normal breaker status and visible indicator only; do not open the wired unit.", "next": ""}
+      },
+      "solutions": ["Replace batteries with the specified type.", "Re-pair the wireless button and receiver if applicable.", "Check the manufacturer's troubleshooting guide.", "Arrange qualified service for a wired doorbell fault."],
+      "safety": ["Do not touch exposed wiring or open mains-connected chime equipment."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "power-strip-switch-not-working",
+      "title": "Power strip or extension board has no power",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["extension board", "power strip", "overload protection"],
+      "symptoms": ["Connected devices do not receive power", "Power indicator is off"],
+      "diagnosis": {"question": "Is there any burning smell, melted plastic, sparking, or visible damage?", "answers": {"yes": "stop-using-power-strip", "no": "check-safe-external-power"}},
+      "steps": {
+        "stop-using-power-strip": {"instruction": "Stop using the power strip and disconnect it only if safe; replace it or arrange qualified inspection.", "next": ""},
+        "check-safe-external-power": {"instruction": "Check the wall outlet and power strip switch visually without opening the equipment.", "next": ""}
+      },
+      "solutions": ["Check the normal switch and wall outlet using a safe, known-good device if appropriate.", "Reset overload protection only if the manufacturer's instructions allow it.", "Replace a faulty or worn power strip."],
+      "safety": ["Do not open the power strip or overload it.", "Never touch plugs or outlets with wet hands."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "smart-speaker-not-responding",
+      "title": "Smart speaker does not respond to voice commands",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["smart speaker offline", "voice assistant", "wake word"],
+      "symptoms": ["Wake word receives no response", "Speaker indicates it is offline"],
+      "diagnosis": {"question": "Is the speaker powered on and connected to the expected Wi-Fi network?", "answers": {"yes": "check-microphone-and-account", "no": "restore-power-and-wifi"}},
+      "steps": {
+        "check-microphone-and-account": {"instruction": "Check the microphone mute control, account status, service status, and wake-word settings.", "next": ""},
+        "restore-power-and-wifi": {"instruction": "Restore power and reconnect through the manufacturer's official app if necessary.", "next": ""}
+      },
+      "solutions": ["Check the microphone mute switch.", "Check Wi-Fi connectivity.", "Restart the speaker.", "Update settings through the official app and check service status."],
+      "safety": ["Review the device's privacy and microphone settings."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "smart-tv-wifi-disconnects",
+      "title": "Smart TV repeatedly disconnects from Wi-Fi",
+      "category": "electronics",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["TV Wi-Fi drop", "streaming disconnect", "smart television network"],
+      "symptoms": ["Streaming stops because the TV goes offline", "TV needs frequent reconnection"],
+      "diagnosis": {"question": "Do other devices remain connected to Wi-Fi when the TV disconnects?", "answers": {"yes": "check-tv-network-settings", "no": "check-router"}},
+      "steps": {
+        "check-tv-network-settings": {"instruction": "Check TV software, saved network settings, signal strength, and power-saving behaviour.", "next": ""},
+        "check-router": {"instruction": "Check router stability, Wi-Fi coverage, and provider service.", "next": ""}
+      },
+      "solutions": ["Improve Wi-Fi signal near the TV.", "Restart the TV and router when convenient.", "Install official TV firmware updates.", "Use wired Ethernet if supported and practical."],
+      "safety": ["Do not factory-reset the TV before checking saved account details and settings."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "everyday-water-tap-low-pressure",
+      "title": "Water tap has low water pressure",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["low water pressure", "tap flow", "water supply"],
+      "symptoms": ["Water flow is weaker than usual", "Only one tap has low flow"],
+      "diagnosis": {"question": "Is the low pressure affecting all taps or only one tap?", "answers": {"yes": "check-building-supply", "no": "check-tap-aerator"}},
+      "steps": {
+        "check-building-supply": {"instruction": "Check whether neighbours or other fixtures are affected and whether there is a known supply interruption.", "next": ""},
+        "check-tap-aerator": {"instruction": "Inspect the tap outlet for visible blockage and follow the fixture manufacturer's safe cleaning instructions.", "next": ""}
+      },
+      "solutions": ["Check whether the local water supply is interrupted.", "Clean a removable aerator only if you can do so safely.", "Contact the building manager or a qualified plumber if the problem persists."],
+      "safety": ["Do not dismantle pressurized plumbing or work near electrical equipment in wet areas."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "everyday-drain-slow",
+      "title": "Sink or washbasin drains slowly",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "basic",
+      "keywords": ["slow drain", "blocked sink", "water not draining"],
+      "symptoms": ["Water drains slowly", "Water pools around the drain"],
+      "diagnosis": {"question": "Is the blockage limited to one sink, or are multiple drains affected?", "answers": {"yes": "check-main-drain", "no": "check-local-blockage"}},
+      "steps": {
+        "check-main-drain": {"instruction": "If multiple drains are affected, stop using excessive water and contact a qualified plumber or building maintenance.", "next": ""},
+        "check-local-blockage": {"instruction": "Check the visible drain cover for removable hair or debris and follow the fixture instructions.", "next": ""}
+      },
+      "solutions": ["Remove visible debris from a safe, accessible drain cover.", "Use a suitable plunger if appropriate for the fixture.", "Contact a plumber if the blockage persists."],
+      "safety": ["Never mix drain-cleaning chemicals.", "Avoid chemical drain cleaners if another chemical has already been used."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "everyday-light-not-working",
+      "title": "A household light does not turn on",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["light bulb", "lamp not working", "lighting circuit"],
+      "symptoms": ["Light stays off", "Other lights may still work"],
+      "diagnosis": {"question": "Are there sparks, a burning smell, buzzing, or signs of heat at the switch or fixture?", "answers": {"yes": "turn-off-and-call-electrician", "no": "check-bulb-safely"}},
+      "steps": {
+        "turn-off-and-call-electrician": {"instruction": "Stop using the circuit and contact a qualified electrician; do not touch exposed wiring.", "next": ""},
+        "check-bulb-safely": {"instruction": "Turn the light off and allow it to cool before checking a user-replaceable bulb according to the fixture instructions.", "next": ""}
+      },
+      "solutions": ["Replace a failed bulb with the correct type only when safe and permitted.", "Check the normal wall switch.", "Arrange qualified service if the fixture or circuit remains faulty."],
+      "safety": ["Never work on live wiring.", "Do not remove fixture covers or electrical panels unless qualified."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "everyday-smoke-or-burning-smell",
+      "title": "An appliance or electronic device smells burnt",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["burning smell", "smoke", "electrical safety"],
+      "symptoms": ["Burning smell comes from a device", "Device becomes unusually hot"],
+      "diagnosis": {"question": "Is there smoke, sparking, flame, or immediate danger?", "answers": {"yes": "move-away-and-call-emergency", "no": "stop-using-device"}},
+      "steps": {
+        "move-away-and-call-emergency": {"instruction": "Move people away, avoid touching the device, and contact local emergency services from a safe location if needed.", "next": ""},
+        "stop-using-device": {"instruction": "Stop using the device and disconnect power only if it is safe to do so; arrange qualified inspection.", "next": ""}
+      },
+      "solutions": ["Keep people away from the device.", "Replace or professionally repair faulty equipment.", "Do not resume use until the cause has been resolved."],
+      "safety": ["Do not pour water onto electrical equipment.", "If there is a fire or immediate danger, leave the area and contact local emergency services."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "everyday-device-wet",
+      "title": "An electronic device gets wet",
+      "category": "everyday-problems",
+      "status": "draft",
+      "difficulty": "intermediate",
+      "keywords": ["wet phone", "liquid damage", "electronics water exposure"],
+      "symptoms": ["Device has been exposed to liquid", "Device behaves abnormally after getting wet"],
+      "diagnosis": {"question": "Is the device connected to power, smoking, unusually hot, or showing electrical damage?", "answers": {"yes": "avoid-contact-and-seek-help", "no": "power-down-safely"}},
+      "steps": {
+        "avoid-contact-and-seek-help": {"instruction": "Keep away from the device if there is electrical danger and seek qualified assistance.", "next": ""},
+        "power-down-safely": {"instruction": "If safe, disconnect external power and switch the device off according to its design and manufacturer guidance.", "next": ""}
+      },
+      "solutions": ["Remove external accessories if safe.", "Follow the manufacturer's liquid-exposure guidance.", "Arrange professional inspection if liquid entered the device."],
+      "safety": ["Do not charge a wet device.", "Do not use an oven, hair dryer, or other heat source to dry electronics.", "Do not open mains-powered equipment."],
+      "sources": [],
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    }
+  ]
+}

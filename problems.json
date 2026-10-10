@@ -66,38 +66,73 @@
       "category": "appliances",
       "status": "draft",
       "difficulty": "intermediate",
-      "keywords": ["AC water leak", "condensate drain", "indoor unit dripping"],
+      "keywords": [
+        "AC water leak",
+        "air conditioner leaking water",
+        "AC dripping water indoors",
+        "indoor AC unit leaking",
+        "water dripping from air conditioner",
+        "air conditioner leaking inside the house",
+        "AC condensate drain clogged",
+        "AC drain pipe blocked",
+        "split AC leaking water",
+        "window AC leaking water indoors",
+        "AC leaking onto wall",
+        "AC leaking onto floor",
+        "air conditioner drain problem"
+      ],
       "symptoms": [
-        "Water drips from indoor unit",
-        "Wall or floor near AC becomes wet"
+        "Water drips or runs from the indoor air conditioner unit.",
+        "Water collects beneath the indoor unit or on the floor nearby.",
+        "The wall, ceiling, or furniture near the air conditioner becomes damp.",
+        "Water drips from the front, sides, or bottom of the indoor unit.",
+        "The air conditioner leaks more water while cooling.",
+        "Water appears to overflow from the unit's drainage area.",
+        "The air conditioner has reduced cooling and visible ice or frost.",
+        "The leak returns after the unit has been running for some time."
       ],
       "diagnosis": {
-        "question": "Is water near electrical outlets, wiring, or the appliance's electrical components?",
+        "question": "Is water near electrical outlets, switches, wiring, or the air conditioner's electrical components?",
         "answers": {
           "yes": "stop-unit-safely",
-          "no": "check-visible-drain-and-filter"
+          "no": "check-leak-and-ice"
         }
       },
       "steps": {
         "stop-unit-safely": {
-          "instruction": "Stop using the unit if safe and keep people away from wet electrical areas; arrange qualified service.",
+          "instruction": "Stop using the air conditioner. If you can switch it off using a dry, safely accessible control without approaching the wet area, do so. Keep people away from wet electrical equipment and arrange qualified assistance. Do not touch wet switches, plugs, wiring, or electrical components.",
           "next": ""
         },
-        "check-visible-drain-and-filter": {
-          "instruction": "Check accessible filters and visible drain hose routing only as described in the manual.",
+        "check-leak-and-ice": {
+          "instruction": "If there is no nearby electrical hazard, switch off the air conditioner before inspecting it. Without removing covers or panels, look for visible ice or frost, a dirty accessible air filter, an obstructed air intake, or a visibly displaced or damaged drain hose. Follow the manufacturer's instructions and do not dismantle the unit.",
           "next": ""
         }
       },
       "solutions": [
-        "Turn off the AC if leaking continues.",
-        "Clean accessible filters according to the manual.",
-        "Arrange service to inspect the condensate drain and installation."
+        "If water is near electrical components, stop using the air conditioner, keep people away from the wet area, and arrange qualified assistance.",
+        "If the accessible air filter is dirty, clean or replace it according to the manufacturer's instructions. A clogged filter can restrict airflow and contribute to coil icing and subsequent water leakage.",
+        "Check that accessible indoor air intake and outlet vents are not blocked by furniture, curtains, or other objects.",
+        "If the visible drain hose appears kinked, crushed, disconnected, or displaced, stop using the unit and arrange qualified service rather than dismantling or adjusting internal components.",
+        "If water appears to be overflowing from the condensate drainage area, arrange for a qualified technician to inspect and clear the drain system.",
+        "If ice or frost is visible on the indoor unit or refrigerant pipes, switch off cooling and arrange qualified service. Allow ice to melt naturally without using tools or applying heat. Protect the surrounding area from meltwater without approaching electrical hazards.",
+        "If the leak began after installation, relocation, or maintenance, arrange for the installer or a qualified technician to check the unit's level, drainage slope, drain connections, and installation.",
+        "If leakage continues after accessible filter cleaning and removal of obvious airflow obstructions, stop using the unit and arrange professional inspection.",
+        "If the air conditioner also has poor cooling, unusual noises, repeated shutdowns, or persistent ice formation, report these symptoms to the technician.",
+        "Do not assume that all indoor leaks are caused by a blocked drain. Drainage faults, airflow restrictions, coil icing, and installation problems may require different repairs."
       ],
       "safety": [
-        "Do not touch wet electrical equipment or open the AC electrical compartment."
+        "Do not touch wet electrical equipment, switches, plugs, wiring, or electrical components.",
+        "Do not open electrical compartments, remove protective panels, or reach inside the air conditioner.",
+        "If water is near electrical equipment, do not approach it to unplug the appliance or operate a nearby switch. Have the power isolated by a qualified person when necessary.",
+        "If you notice smoke, sparks, a burning smell, or signs of electrical damage, keep away from the area and seek urgent qualified assistance.",
+        "Do not continue operating an air conditioner that is leaking heavily, causing water damage, or showing signs of electrical danger.",
+        "Do not use sharp objects, compressed air, chemical drain cleaners, or improvised tools to clear internal drainage passages.",
+        "Do not attempt to handle refrigerants, repair electrical components, or dismantle the indoor unit.",
+        "Do not chip away ice or use boiling water, a heat gun, or other direct heat to defrost the unit.",
+        "Keep children and pets away from pooled water and any potentially unsafe electrical area."
       ],
       "sources": [],
-      "updatedAt": "2026-10-10T00:00:00.000Z"
+      "updatedAt": "2026-10-11T00:00:00.000Z"
     },
     {
       "schemaVersion": 1,
@@ -106,13 +141,37 @@
       "category": "android",
       "status": "draft",
       "difficulty": "basic",
-      "keywords": ["alarm silent", "clock alarm", "Do Not Disturb"],
+      "keywords": [
+        "Android alarm not ringing",
+        "Android alarm not working",
+        "phone alarm silent",
+        "alarm not making sound",
+        "Clock app alarm not ringing",
+        "alarm notification silent",
+        "alarm not going off",
+        "Android alarm volume",
+        "alarm sound not playing",
+        "alarm missed",
+        "Do Not Disturb alarm",
+        "battery optimization alarm",
+        "alarm not ringing when phone is locked",
+        "Android alarm while Bluetooth connected",
+        "alarm not ringing after update"
+      ],
       "symptoms": [
-        "Alarm time passes without sound",
-        "Alarm notification is silent"
+        "The scheduled alarm time passes without any sound.",
+        "The alarm appears on screen but produces no audible sound.",
+        "The alarm notification appears silently.",
+        "The alarm works when tested manually but fails at its scheduled time.",
+        "Some alarms ring correctly, but others do not.",
+        "The alarm rings on certain days but not on others.",
+        "The alarm works while the phone is being used but fails when the screen is locked.",
+        "The alarm sound is too quiet to hear.",
+        "The alarm appears to ring through connected headphones or another audio device instead of the phone speaker.",
+        "The alarm stopped working after a system update or Clock app update."
       ],
       "diagnosis": {
-        "question": "Does the alarm appear on screen when its scheduled time arrives?",
+        "question": "Does the alarm appear on screen or show an alarm notification when its scheduled time arrives?",
         "answers": {
           "yes": "check-alarm-sound",
           "no": "check-alarm-schedule"
@@ -120,25 +179,41 @@
       },
       "steps": {
         "check-alarm-sound": {
-          "instruction": "Check the alarm's selected sound, alarm volume, and any app-specific settings.",
+          "instruction": "Open the Clock app and edit the affected alarm. Check that its selected sound is not set to None or Silent, then increase the alarm volume using the Clock app's settings or the phone's sound settings. Preview the selected sound if that option is available. Do not assume that media volume controls alarm volume.",
           "next": ""
         },
         "check-alarm-schedule": {
-          "instruction": "Verify the alarm time, selected days, AM/PM where applicable, and app permissions.",
+          "instruction": "Open the Clock app and verify the alarm time, AM/PM where applicable, selected days, and whether the alarm is enabled. Check that the phone's date and time are correct. If the alarm is missing or disabled, create a new test alarm a few minutes ahead.",
           "next": ""
         }
       },
       "solutions": [
-        "Choose an audible alarm sound.",
-        "Set alarm volume to a suitable level.",
-        "Test a new alarm a few minutes ahead.",
-        "Update the Clock app."
+        "Select an audible alarm tone in the Clock app. If the selected sound is a custom file or online sound, try a built-in tone to rule out an unavailable or inaccessible audio file.",
+        "Set the alarm volume to a clearly audible level. Check the dedicated alarm-volume control where available instead of relying only on media or ringtone volume.",
+        "Create a test alarm a few minutes ahead and verify that it rings while the screen is locked.",
+        "Check Do Not Disturb, Bedtime mode, and other sound-related modes. Android behavior varies by device and configuration, so verify that alarms are permitted where the relevant settings provide alarm exceptions.",
+        "If the alarm notification appears but no sound is heard, check the Clock app's notification permissions and alarm-related notification settings, where available.",
+        "If the alarm does not appear at the scheduled time, verify the alarm's enabled state, scheduled days, time, and AM/PM selection.",
+        "Check whether the Clock app offers a setting for gradually increasing alarm volume. Disable or adjust it temporarily if the alarm starts too quietly to notice.",
+        "If Bluetooth headphones or speakers are connected, disconnect them temporarily and test whether the alarm sounds through the phone's speaker. Audio routing behavior differs between devices.",
+        "If the Clock app has recently been updated, restart the phone and test a newly created alarm. Install available stable Clock app and system updates if the problem persists.",
+        "If the problem occurs only when the phone is idle or the screen is locked, check the manufacturer's battery-management settings for Clock app restrictions. Where available, allow the Clock app to operate without restrictive background limitations.",
+        "Check whether the Clock app has the required permissions and, on Android versions that expose it, permission to schedule exact alarms. Settings and permission names vary by Android version and app implementation.",
+        "If the problem started after changing system settings, review recently changed sound, notification, battery, and alarm permissions.",
+        "If the alarm still fails, test another reputable alarm app temporarily to help determine whether the problem is specific to the Clock app. Verify the replacement alarm before relying on it.",
+        "If the problem persists across multiple alarm apps after checking settings and restarting the phone, consult the phone manufacturer's support service."
       ],
       "safety": [
-        "Do not rely on an untested phone alarm as the sole alert for a critical event."
+        "Do not rely on an untested phone alarm as the sole alert for an important appointment, medication schedule, emergency, or other critical event.",
+        "Test any new alarm configuration before depending on it.",
+        "Keep the phone sufficiently charged overnight, especially if battery-management settings or power-saving modes affect background activity.",
+        "Do not disable essential security features or grant unrelated permissions merely to make an alarm work.",
+        "Avoid installing alarm apps from untrusted sources or granting unnecessary access to contacts, messages, accessibility services, or other sensitive information.",
+        "Do not clear Clock app storage or reset app data without understanding the consequences, as saved alarms and other settings may be removed.",
+        "If changing battery restrictions or exact-alarm permissions, use the phone's normal settings and grant only permissions needed by the chosen app."
       ],
       "sources": [],
-      "updatedAt": "2026-10-10T00:00:00.000Z"
+      "updatedAt": "2026-10-11T00:00:00.000Z"
     },
     {
       "schemaVersion": 1,
@@ -148,16 +223,41 @@
       "status": "draft",
       "difficulty": "basic",
       "keywords": [
-        "app not installing",
-        "installation error",
-        "incompatible app"
+        "Android app not installing",
+        "app installation failed",
+        "Android installation error",
+        "Google Play app not installing",
+        "Play Store download stuck",
+        "app download pending",
+        "app cannot be installed",
+        "package installer error",
+        "APK installation failed",
+        "Android app incompatible",
+        "insufficient storage app installation",
+        "app installation blocked",
+        "unknown app source",
+        "Google Play error installing app",
+        "Android app stuck installing",
+        "app installation keeps failing",
+        "app not compatible with phone",
+        "Android installation problem"
       ],
       "symptoms": [
-        "Install button fails",
-        "Android reports an installation error"
+        "The Install button does not start the installation.",
+        "The app downloads but fails during installation.",
+        "Android displays an app installation error.",
+        "Google Play displays a Pending status indefinitely.",
+        "The installation stops before the download finishes.",
+        "The phone reports insufficient storage.",
+        "The app store reports that the app is incompatible with the device.",
+        "An APK file downloads but Android refuses to install it.",
+        "The installer reports that the app was not installed.",
+        "The installation fails repeatedly even after restarting the phone.",
+        "The app installs but cannot be updated.",
+        "The installation fails after an Android system update."
       ],
       "diagnosis": {
-        "question": "Does the app store say that the app is incompatible with your device?",
+        "question": "Does Google Play or the installation screen report that the app is incompatible with your device?",
         "answers": {
           "yes": "check-compatibility",
           "no": "check-storage-install"
@@ -165,25 +265,45 @@
       },
       "steps": {
         "check-compatibility": {
-          "instruction": "Check the app's supported Android versions, device requirements, and region availability.",
+          "instruction": "Open the app's official store listing and check its minimum Android version, device requirements, availability in your region, and any stated hardware restrictions. Install Android updates only if they are officially supported by your device. Do not attempt to bypass compatibility restrictions without understanding the risks.",
           "next": ""
         },
         "check-storage-install": {
-          "instruction": "Check available storage, network access, and whether the installation source is trusted.",
+          "instruction": "Check the phone's available storage in Settings. If installing through Google Play, check whether the download is pending and whether the internet connection is stable. If installing an APK, verify that it came from the developer's official website or another trustworthy source. Note the exact error message before trying further troubleshooting.",
           "next": ""
         }
       },
       "solutions": [
-        "Free storage if needed.",
-        "Update Android where supported.",
-        "Restart the phone and retry through the official store.",
-        "Contact the app developer if the store reports a persistent error."
+        "Free up storage if the phone does not have enough available space. Remember that installation may require more temporary space than the final app size.",
+        "Restart the phone and retry the installation through the official app store.",
+        "Check the internet connection. If a download remains pending, verify that other downloads are not blocking it and that the connection is stable.",
+        "Check Google Play Store for download or installation errors. If necessary, follow Google's official troubleshooting instructions for Play Store downloads.",
+        "If Google Play downloads remain stuck, check the Play Store's cache and storage settings. Clear the cache first; clearing app storage should be considered only when necessary because it can reset local app settings.",
+        "Check whether the device has enough free storage and whether Android reports a system or package-installer problem.",
+        "Install available Android system updates if the device supports them and the app requires a newer Android version.",
+        "If the app is incompatible, look for an officially supported version or contact the developer. Do not assume that an APK from another source will work correctly.",
+        "If an APK fails to install, verify that it is intended for the device's Android version and supported processor architecture. Some apps distributed as split APKs or app bundles cannot be installed by opening a single APK file.",
+        "If Android blocks an APK, review the warning and verify the source before deciding what to do. Do not disable security protections merely to force installation.",
+        "If an app update fails, check whether the existing app was installed from a different source or signed with a different certificate. Contact the developer if the error persists, especially if uninstalling could result in data loss.",
+        "If the installation reports a package conflict or signature error, record the exact message and contact the app developer. Avoid uninstalling the existing app until its data is backed up and the consequences are understood.",
+        "If the installation fails after an Android update, restart the phone, check for subsequent official updates, and consult the device manufacturer's support resources if the problem affects multiple apps.",
+        "If only one app fails, check its official support page or contact its developer. If multiple trusted apps fail to install, investigate the Play Store, available storage, or Android system before considering more disruptive repairs.",
+        "If the problem persists, record the app name, installation source, Android version, available storage, and exact error message before seeking technical support."
       ],
       "safety": [
-        "Avoid bypassing Android security protections to install an untrusted APK."
+        "Prefer Google Play or the app developer's official distribution channel.",
+        "Do not install APK files from unknown websites, unsolicited messages, or suspicious download links.",
+        "Do not disable Google Play Protect or other Android security protections simply to force an installation.",
+        "Grant permission to install unknown apps only when genuinely necessary, only to a trusted source, and only after verifying the file's origin.",
+        "Do not install modified, cracked, or repackaged versions of paid apps.",
+        "Do not uninstall an existing app to resolve an update error until important app data has been backed up and the potential data loss is understood.",
+        "Do not clear an app's storage or perform a factory reset as an initial troubleshooting step.",
+        "Do not download older or unofficial app versions from untrusted websites to bypass compatibility restrictions.",
+        "If Android or Google Play Protect warns that an app may be harmful, stop and verify the app with its developer rather than ignoring the warning.",
+        "Do not share account passwords, verification codes, or sensitive personal information with anyone claiming to provide installation support."
       ],
       "sources": [],
-      "updatedAt": "2026-10-10T00:00:00.000Z"
+      "updatedAt": "2026-10-11T00:00:00.000Z"
     },
     {
       "schemaVersion": 1,
